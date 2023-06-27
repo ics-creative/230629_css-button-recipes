@@ -1,16 +1,16 @@
 import hljs from 'highlight.js';
 import 'highlight.js/styles/vs2015.css';
-import { buttonCodes } from './assets/js/buttonCodes';
+import { buttons } from './assets/js/buttons.js';
 
 document.querySelectorAll("[data-code]").forEach(el => {
 
   const name = el.dataset.code;
-  
-  buttonCodes[name].forEach((item) => { 
+
+  buttons[name].forEach((item) => {
     const wrapperElement = document.createElement("div");
     wrapperElement.classList.add("code");
     el.appendChild(wrapperElement)
-    
+
     const categoryElement = document.createElement("p");
     categoryElement.classList.add("code_label");
     categoryElement.textContent = item.category;
@@ -22,9 +22,9 @@ document.querySelectorAll("[data-code]").forEach(el => {
 
     wrapperElement.appendChild(categoryElement);
     wrapperElement.appendChild(codeElement);
-    
+
     hljs.highlightElement(codeElement);
-  })  
+  })
 });
 
 // const buttons = document.querySelectorAll(".copy");
