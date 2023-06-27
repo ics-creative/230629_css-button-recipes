@@ -1,7 +1,10 @@
 @mixin resetButtonDefaultStyle {
   text-decoration: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
   border: 0;
+  -webkit-touch-callout: none;
 
   &:visited {
     color: inherit;
@@ -14,9 +17,6 @@
   height: 64px;
   padding: 8px 24px;
   font-size: 16px;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
 }
 
 @mixin focusVisible {
