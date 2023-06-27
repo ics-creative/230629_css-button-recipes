@@ -1,0 +1,24 @@
+@use "./mixins/mixins.scss";
+
+.buttonGradient {
+  @include mixins.resetButtonDefaultStyle;
+  @include mixins.buttonBaseStyle;
+  @include mixins.focusVisible;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  background: linear-gradient(135deg, var(--color-blue), #15ccab, #c9ac2c);
+  background-position: left 0 center;
+  background-size: 200% 200%;
+
+  @media (any-hover: hover) {
+    transition: background-position 0.3s linear;
+
+    &:hover,
+    &:focus-visible {
+      background-position: left 70% center;
+    }
+  }
+}

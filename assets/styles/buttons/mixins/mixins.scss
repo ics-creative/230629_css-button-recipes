@@ -1,0 +1,27 @@
+@mixin resetButtonDefaultStyle {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+@mixin buttonBaseStyle {
+  width: 100%;
+  max-width: 320px;
+  height: 64px;
+  padding: 8px 24px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+@mixin focusVisible {
+  &:focus-visible {
+    outline-color: var(--color-black);
+    outline-offset: 3px;
+  }
+}

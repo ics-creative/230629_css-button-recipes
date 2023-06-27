@@ -1,0 +1,41 @@
+@use "./mixins/mixins.scss";
+
+.buttonIcon {
+  @include mixins.resetButtonDefaultStyle;
+  @include mixins.focusVisible;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  aspect-ratio: 1;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+
+  $button: &;
+
+  &:focus-visible {
+    outline-color: var(--color-black);
+    outline-offset: 3px;
+  }
+
+  &_item {
+    background-color: var(--color-white);
+  }
+
+  @media (any-hover: hover) {
+    transition: background-color 0.1s linear;
+
+    &_icon_mask {
+      transition: background-color 0.1s linear;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--color-blue-dark);
+      #{$button}_icon_mask {
+        background-color: var(--color-blue-dark);
+      }
+    }
+  }
+}

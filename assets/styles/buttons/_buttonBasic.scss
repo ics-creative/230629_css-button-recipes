@@ -1,0 +1,23 @@
+@use "./mixins/mixins.scss";
+
+.buttonBasic {
+  @include mixins.resetButtonDefaultStyle;
+  @include mixins.buttonBaseStyle;
+  @include mixins.focusVisible;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+
+  @media (any-hover: hover) {
+    transition: background-color 0.1s;
+    transition-timing-function: linear;
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--color-blue-dark)
+    }
+  }
+}

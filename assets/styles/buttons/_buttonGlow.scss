@@ -1,0 +1,51 @@
+@use "./mixins/mixins.scss";
+
+.buttonGlow {
+  @include mixins.resetButtonDefaultStyle;
+  @include mixins.buttonBaseStyle;
+
+  position: relative;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--color-blue), #15ccab);
+  border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(135deg, var(--color-blue), #15ccab);
+    filter: blur(8px);
+    border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+    opacity: 0;
+  }
+  
+  @media (any-hover: hover) {
+    &::before {
+      transition: opacity 0.1s linear;
+      will-change: filter;
+    }
+
+    &:hover,
+    &:focus-visible {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+  }
+}
