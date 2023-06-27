@@ -1,197 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    
-    <title>Vite App</title>
-    <script type="module" crossorigin src="./index.js"></script>
-    <link rel="modulepreload" crossorigin href="./vendor.js">
-    <link rel="stylesheet" href="./index.css">
-  </head>
-  <body>
-    <ul class="recipeList">
-      <li class="recipe">
-        <h2>矩形のボタン</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonBasic">テキスト</button>
-        </div>
-        <details class="accordion">
-          <summary class="accordion_summary">コードを表示</summary>
-          <div class="accordion_content">
-            <div class="codeUnit" data-code="buttonBasic"></div>
-          </div>
-        </details>
-      </li>
-      <li class="recipe">
-        <h2>アウトラインのボタン</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonOutline">テキスト</button>
-        </div>
-      </li>
-      <li class="recipe">
-        <h2>背景色がグラデーションのボタン</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonGradient">テキスト</button>
-        </div>
-      </li>
-      <li class="recipe">
-        <h2>楕円形のボタン</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonRound">テキスト</button>
-        </div>
-      </li>
-      <li class="recipe">
-        <h2>円形+アイコンのボタン</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonIcon" aria-label="お問い合わせ">
-            <span class="buttonIcon_item maskIcon maskIcon__email"></span>
-          </button>
-        </div>
-      </li>
-      <li class="recipe">
-        <h2>円形+アイコンのボタン（矢印）</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonIcon" aria-label="ページ上部へ戻る">
-            <span class="buttonIcon_item maskIcon maskIcon__arrowTop"></span>
-          </button>
-          <button type="button" class="buttonIcon" aria-label="詳しく見る">
-            <span class="buttonIcon_item maskIcon maskIcon__arrowRight"></span>
-          </button>
-          <button type="button" class="buttonIcon" aria-label="コンテンツへ移動します">
-            <span class="buttonIcon_item maskIcon maskIcon__arrowBottom"></span>
-          </button>
-          <button type="button" class="buttonIcon" aria-label="戻る">
-            <span class="buttonIcon_item maskIcon maskIcon__arrowLeft"></span>
-          </button>
-        </div>
-      </li>
-      <li class="recipe">
-        <h2>アイコン+テキストのボタン</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonIconText">
-            <span class="buttonIconText_icon">
-              <span class="buttonIconText_icon_mask maskIcon maskIcon__email"></span>
-            </span>
-            <span class="buttonIconText_text">お問い合わせ</span>
-          </button>
-          <button type="button" class="buttonIconText buttonIconText__reverse">
-            <span class="buttonIconText_icon">
-              <span class="buttonIconText_icon_mask maskIcon maskIcon__email"></span>
-            </span>
-            <span class="buttonIconText_text">お問い合わせ</span>
-          </button>
-        </div>
-      </li>
-      <li class="recipe">
-        <h2>アイコン+テキストのボタン（中央寄せ）</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonIconText02">
-            <span class="buttonIconText02_icon">
-              <span class="buttonIconText02_icon_mask maskIcon maskIcon__email"></span>
-            </span>
-            <span class="buttonIconText02_text">お問い合わせ</span>
-          </button>
-          <button type="button" class="buttonIconText02 buttonIconText02__reverse">
-            <span class="buttonIconText02_icon">
-              <span class="buttonIconText02_icon_mask maskIcon maskIcon__email"></span>
-            </span>
-            <span class="buttonIconText02_text">お問い合わせ</span>
-          </button>
-        </div>
-      </li>
-
-      <li class="recipe">
-        <h2>アイコン+テキストのボタン（矢印）</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonArrow buttonArrow__reverse">
-            <span class="buttonArrow_icon">
-              <span class="buttonArrow_icon_mask maskIcon maskIcon__arrowRight"></span>
-            </span>
-            <span class="buttonArrow_text">詳しく見る</span>
-          </button>
-          <button type="button" class="buttonArrow buttonArrow__reverse">
-            <span class="buttonArrow_icon buttonArrow_icon__bottom">
-              <span class="buttonArrow_icon_mask maskIcon maskIcon__arrowBottom"></span>
-            </span>
-            <span class="buttonArrow_text">詳しく見る</span>
-          </button>
-          <button type="button" class="buttonArrow">
-            <span class="buttonArrow_icon buttonArrow_icon__left">
-              <span class="buttonArrow_icon_mask maskIcon maskIcon__arrowLeft"></span>
-            </span>
-            <span class="buttonArrow_text">戻る</span>
-          </button>
-  
-          <button type="button" class="buttonArrow buttonArrow__reverse">
-            <span class="buttonArrow_icon buttonArrow_icon__top">
-              <span class="buttonArrow_icon_mask maskIcon maskIcon__arrowTop"></span>
-            </span>
-            <span class="buttonArrow_text">ページ上部へ戻る</span>
-          </button>
-        </div>
-      </li>
-
-      <li class="recipe">
-        <h2>通常のテキストをホバー時に領域を表示する</h2>
-        <div class="recipe_main">        
-          <button type="button" class="buttonText">キャンセルする</button>
-        </div>
-      </li>
-
-      <li class="recipe">
-        <h2>通常のテキスト下線部のアニメーション表示</h2>
-        <div class="recipe_main">
-          <ul class="menu">
-            <li>
-              <button type="button" class="buttonUnderline">Home</button>
-            </li>
-            <li>
-              <button type="button" class="buttonUnderline">About</button>
-            </li>
-            <li>
-              <button type="button" class="buttonUnderline">News</button>
-            </li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="recipe">
-        <h2>グラデーションのアウトラインと同じ配色で発光</h2>
-        <div class="recipe_main recipe_main__bgBlack">
-          <button type="button" class="buttonGlow">
-            <span class="buttonGlow_item">テキスト</span>
-          </button>
-        </div>
-      </li>
-
-      <li class="recipe">
-        <h2>アウトラインに光沢の演出を加える</h2>
-        <div class="recipe_main recipe_main__bgBlack">
-          <button type="button" class="buttonBorderGlow">
-            <span class="buttonBorderGlow_bg"></span>
-            <span class="buttonBorderGlow_item">テキスト</span>
-          </button>
-        </div>
-      </li>
-
-      <li class="recipe">
-        <h2>単色の影</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonSolidShadow">テキスト</button>
-        </div>
-      </li>
-
-      <li class="recipe">
-        <h2>ニューモフィズム</h2>
-        <div class="recipe_main">
-          <button type="button" class="buttonNeumorphism">
-            <span class="buttonNeumorphism_item maskIcon maskIcon__email"></span>
-          </button>
-        </div>
-      </li>
-    </ul>
-  </body>
-  
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./index.css">
+<title></title>
+</head>
+<body>
+  <ul>
+    <li><a href="./buttonGlow/">buttonGlow</a></li>
+    <li><a href="./buttonBorderGlow/">buttonBorderGlow</a></li>
+    <li><a href="./buttonNeumorphism/">buttonNeumorphism</a></li>
+    <li><a href="./buttonUnderline/">buttonUnderline</a></li>
+    <li><a href="./buttonBasic/">buttonBasic</a></li>
+    <li><a href="./buttonIcon/">buttonIcon</a></li>
+    <li><a href="./buttonIcon02/">buttonIcon02</a></li>
+    <li><a href="./buttonIconText02/">buttonIconText02</a></li>
+    <li><a href="./buttonIconText03/">buttonIconText03</a></li>
+    <li><a href="./buttonRound/">buttonRound</a></li>
+    <li><a href="./buttonOutline/">buttonOutline</a></li>
+  </ul>
+</body>
 </html>

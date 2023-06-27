@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  padding: 64px 16px;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #efefef;
+}
+
+body.dark {
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+.buttonSolidShadow {
+  width: 100%;
+  max-width: 320px;
+  height: 64px;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  background-color: #fff;
+  border: 2px solid #222;
+  box-shadow: 8px 8px 0 #222;
+}
+
+@media (any-hover: hover) {
+  .buttonSolidShadow {
+    transition: box-shadow 0.1s linear;
+  }
+
+  .buttonSolidShadow:hover, .buttonSolidShadow:focus-visible {
+    box-shadow: 4px 4px 0 #222;
+  }
+}

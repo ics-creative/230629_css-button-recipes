@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 64px 16px;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.maskIcon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  &__email {
+    -webkit-mask-image: url("../../assets/images/icon_mail_outline.svg");
+    mask-image: url("../../assets/images/icon_mail_outline.svg");
+  }
+
+  &__arrowRight {
+    -webkit-mask-image: url("../../assets/images/icon_arrow.svg");
+    mask-image: url("../../assets/images/icon_arrow.svg");
+  }
+
+  &__arrowBottom {
+    -webkit-mask-image: url("../../assets/images/icon_arrow.svg");
+    mask-image: url("../../assets/images/icon_arrow.svg");
+    rotate: 90deg;
+  }
+
+  &__arrowLeft {
+    -webkit-mask-image: url("../../assets/images/icon_arrow.svg");
+    mask-image: url("../../assets/images/icon_arrow.svg");
+    rotate: 180deg;
+  }
+
+  &__arrowTop {
+    -webkit-mask-image: url("../../assets/images/icon_arrow.svg");
+    mask-image: url("../../assets/images/icon_arrow.svg");
+    rotate: 270deg;
+  }
+}

@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  padding: 64px 16px;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #efefef;
+}
+
+body.dark {
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  aspect-ratio: 1;
+  background-color: #2e63c5;
+  border-radius: 50%;
+}
+
+.buttonIcon:focus-visible {
+  outline-color: #222;
+  outline-offset: 3px;
+}
+
+.buttonIcon_item {
+  background-color: #fff;
+}
+
+@media (any-hover: hover) {
+  .buttonIcon {
+    transition: background-color 0.1s linear;
+  }
+
+  .buttonIcon_icon_mask {
+    transition: background-color 0.1s linear;
+  }
+
+  .buttonIcon:hover, .buttonIcon:focus-visible {
+    background-color: #153979;
+  }
+
+  .buttonIcon:hover .buttonIcon_icon_mask, .buttonIcon:focus-visible .buttonIcon_icon_mask {
+    background-color: #153979;
+  }
+}

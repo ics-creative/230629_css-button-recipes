@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  padding: 64px 16px;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #efefef;
+}
+
+body.dark {
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+.buttonIconText03 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  height: 64px;
+  padding: 8px 24px;
+  padding: 8px 64px 8px 8px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2e63c5;
+  border-radius: 32px;
+}
+
+@media (any-hover: hover) {
+  .buttonIconText03 {
+    transition: background-color 0.1s linear;
+  }
+
+  .buttonIconText03_icon {
+    transition: transform 0.1s linear;
+  }
+
+  .buttonIconText03:hover, .buttonIconText03:focus-visible {
+    background-color: #153979;
+  }
+
+  .buttonIconText03:hover .buttonIconText03_icon, .buttonIconText03:focus-visible .buttonIconText03_icon {
+    transform: translateX(4px);
+  }
+
+  .buttonIconText03:hover .buttonIconText03_icon__bottom, .buttonIconText03:focus-visible .buttonIconText03_icon__bottom {
+    transform: translateY(4px);
+  }
+
+  .buttonIconText03:hover .buttonIconText03_icon__left, .buttonIconText03:focus-visible .buttonIconText03_icon__left {
+    transform: translateX(-4px);
+  }
+
+  .buttonIconText03:hover .buttonIconText03_icon__top, .buttonIconText03:focus-visible .buttonIconText03_icon__top {
+    transform: translateY(-4px);
+  }
+}
+
+.buttonIconText03__reverse {
+  flex-direction: row-reverse;
+  padding: 8px 8px 8px 64px;
+}
+
+.buttonIconText03_icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.buttonIconText03_icon_mask {
+  background-color: #fff;
+}
+
+.buttonIconText03_text {
+  flex-shrink: 1;
+  width: 100%;
+}

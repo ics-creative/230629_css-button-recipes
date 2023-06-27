@@ -1,0 +1,19 @@
+@use "../_mixins.scss" as mixins;
+@use "../_variables.scss" as variables;
+@include mixins.baseStyle;
+
+.buttonText {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+
+  @media (any-hover: hover) {
+    transition: background-color 0.1s linear;
+
+    &:hover,
+    &:focus-visible {
+      background: variables.$color-white;
+    }
+  }
+}

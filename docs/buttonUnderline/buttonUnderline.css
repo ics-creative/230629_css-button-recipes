@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  padding: 64px 16px;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #efefef;
+}
+
+body.dark {
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu {
+  display: flex;
+  padding: 0 16px;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgb(0 0 0 / 30%);
+}
+
+.buttonUnderline {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  padding: 0 24px;
+  overflow: hidden;
+  font-size: 15px;
+  text-align: center;
+  background: transparent;
+}
+
+.buttonUnderline::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #2e63c5;
+  transform: scaleX(0);
+  transform-origin: right top;
+}
+
+@media (any-hover: hover) {
+  .buttonUnderline::after {
+    transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .buttonUnderline:hover::after, .buttonUnderline:focus-visible::after {
+    transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+    transform: scaleX(1);
+    transform-origin: left top;
+  }
+}

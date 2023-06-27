@@ -1,0 +1,23 @@
+@use "../_mixins.scss" as mixins;
+@use "../_variables.scss" as variables;
+@include mixins.baseStyle;
+
+.buttonBasic {
+  @include mixins.buttonBaseSize;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: variables.$color-white;
+  background-color: variables.$color-blue;
+
+  @media (any-hover: hover) {
+    transition: background-color 0.1s;
+    transition-timing-function: linear;
+
+    &:hover,
+    &:focus-visible {
+      background-color: variables.$color-blue-dark;
+    }
+  }
+}

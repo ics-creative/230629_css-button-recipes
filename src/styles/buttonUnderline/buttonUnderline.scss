@@ -1,0 +1,64 @@
+@use "../_mixins.scss" as mixins;
+@use "../_variables.scss" as variables;
+@include mixins.baseStyle;
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu {
+  display: flex;
+  padding: 0 16px;
+  background-color: variables.$color-white;
+  box-shadow: 0 0 4px rgb(0 0 0 / 30%);
+}
+
+.buttonUnderline {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  padding: 0 24px;
+  overflow: hidden;
+  font-size: 15px;
+  text-align: center;
+  background: transparent;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background-color: variables.$color-blue;
+    transform: scaleX(0);
+    transform-origin: right top;
+  }
+
+  // easeInOutExpo（https://ics.media/entry/18730/）
+  $ease-in-out-expo: cubic-bezier(0.9, 0, 0, 1);
+
+  // easeOutExpo（https://ics.media/entry/18730/）
+  $ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+  @media (any-hover: hover) {
+    &::after {
+      transition: transform 0.2s $ease-out-expo;
+    }
+
+    &:hover,
+    &:focus-visible {
+      &::after {
+        transition: transform 0.4s $ease-in-out-expo;
+        transform: scaleX(1);
+        transform-origin: left top
+      }
+    }
+  }
+}
