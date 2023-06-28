@@ -43,6 +43,12 @@ button {
   border: 0;
 }
 
+.buttonList {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 16px;
+}
+
 .buttonIcon {
   display: flex;
   align-items: center;
