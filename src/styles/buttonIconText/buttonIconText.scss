@@ -15,22 +15,6 @@
 
   $button: &;
 
-  @media (any-hover: hover) {
-    transition: background-color 0.1s linear;
-
-    &_icon_mask {
-      transition: background-color 0.1s linear;
-    }
-
-    &:hover,
-    &:focus-visible {
-      background-color: variables.$color-blue-dark;
-      #{$button}_icon_mask {
-        background-color: variables.$color-blue-dark;
-      }
-    }
-  }
-
   &__reverse {
     flex-direction: row-reverse;
     padding: 8px 8px 8px 40px;
@@ -57,4 +41,26 @@
     flex-shrink: 1;
     width: 100%;
   }
+
+  @media (any-hover: hover) {
+    transition: background-color 0.1s linear;
+
+    &_icon_mask {
+      transition: background-color 0.1s linear;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: variables.$color-blue-dark;
+      #{$button}_icon_mask {
+        background-color: variables.$color-blue-dark;
+      }
+    }
+  }
 }
+
+@include mixins.maskIconEmail;
+@include mixins.maskIconArrowTop;
+@include mixins.maskIconArrowRight;
+@include mixins.maskIconArrowBottom;
+@include mixins.maskIconArrowLeft;

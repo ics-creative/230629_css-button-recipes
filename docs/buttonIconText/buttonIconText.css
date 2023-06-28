@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+/* サンプルに必要なCSS */
 * {
   box-sizing: border-box;
 }
@@ -9,13 +12,15 @@ html {
 body {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
+  row-gap: 16px;
+  place-content: center;
+  place-items: center;
   height: 100%;
   padding: 64px 16px;
   margin: 0;
   font-family: sans-serif;
   font-size: 16px;
+  color: #222;
   background-color: #efefef;
 }
 
@@ -23,6 +28,7 @@ body.dark {
   background-color: #222;
 }
 
+/* aタグのリセットCSS */
 a {
   text-decoration: none;
 }
@@ -31,6 +37,7 @@ a:visited {
   color: inherit;
 }
 
+/* buttonタグのリセットCSS */
 button {
   cursor: pointer;
   border: 0;
@@ -49,24 +56,6 @@ button {
   color: #fff;
   background-color: #2e63c5;
   border-radius: 32px;
-}
-
-@media (any-hover: hover) {
-  .buttonIconText {
-    transition: background-color 0.1s linear;
-  }
-
-  .buttonIconText_icon_mask {
-    transition: background-color 0.1s linear;
-  }
-
-  .buttonIconText:hover, .buttonIconText:focus-visible {
-    background-color: #153979;
-  }
-
-  .buttonIconText:hover .buttonIconText_icon_mask, .buttonIconText:focus-visible .buttonIconText_icon_mask {
-    background-color: #153979;
-  }
 }
 
 .buttonIconText__reverse {
@@ -94,4 +83,95 @@ button {
 .buttonIconText_text {
   flex-shrink: 1;
   width: 100%;
+}
+
+@media (any-hover: hover) {
+  .buttonIconText {
+    transition: background-color 0.1s linear;
+  }
+
+  .buttonIconText_icon_mask {
+    transition: background-color 0.1s linear;
+  }
+
+  .buttonIconText:hover, .buttonIconText:focus-visible {
+    background-color: #153979;
+  }
+
+  .buttonIconText:hover .buttonIconText_icon_mask, .buttonIconText:focus-visible .buttonIconText_icon_mask {
+    background-color: #153979;
+  }
+}
+
+/* お問い合わせ用アイコンのスタイル */
+.maskIconEmail {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMy41IiB5PSI1LjUiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxMiIgcng9IjEuNSIgc3Ryb2tlPSJibGFjayIvPgo8cGF0aCBkPSJNNiA5QzYgOSAxMS41IDEyIDEyIDEyQzEyLjUgMTIgMTggOSAxOCA5IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMy41IiB5PSI1LjUiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxMiIgcng9IjEuNSIgc3Ryb2tlPSJibGFjayIvPgo8cGF0aCBkPSJNNiA5QzYgOSAxMS41IDEyIDEyIDEyQzEyLjUgMTIgMTggOSAxOCA5IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+}
+
+/* 上矢印アイコンのスタイル */
+.maskIconArrowTop {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+  rotate: 270deg;
+}
+
+/* 右矢印アイコンのスタイル */
+.maskIconArrowRight {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+}
+
+/* 下矢印アイコンのスタイル */
+.maskIconArrowBottom {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+  rotate: 90deg;
+}
+
+/* 左矢印アイコンのスタイル */
+.maskIconArrowLeft {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
+  rotate: 180deg;
 }

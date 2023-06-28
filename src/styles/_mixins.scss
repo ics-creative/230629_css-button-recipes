@@ -9,32 +9,7 @@
 }
 
 @mixin baseStyle {
-  body {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 64px 16px;
-    margin: 0;
-    font-family: sans-serif;
-    font-size: 16px;
-    background-color: variables.$color-gray-light;
-  }
-
-  a {
-    text-decoration: none;
-
-    &:visited {
-      color: inherit;
-    }
-  }
-
-  button {
-    cursor: pointer;
-    border: 0;
-  }
-}
-
-@mixin baseStyle {
+  /* サンプルに必要なCSS */
   * {
     box-sizing: border-box;
   }
@@ -46,13 +21,15 @@
   body {
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
+    row-gap: 16px;
+    place-content: center;
+    place-items: center;
     height: 100%;
     padding: 64px 16px;
     margin: 0;
     font-family: sans-serif;
     font-size: 16px;
+    color: variables.$color-black;
     background-color: variables.$color-gray-light;
 
     &.dark {
@@ -60,6 +37,7 @@
     }
   }
 
+  /* aタグのリセットCSS */
   a {
     text-decoration: none;
 
@@ -68,8 +46,73 @@
     }
   }
 
+  /* buttonタグのリセットCSS */
   button {
     cursor: pointer;
     border: 0;
+  }
+}
+
+@mixin iconBaseStyle {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+@mixin maskIconEmail {
+  /* お問い合わせ用アイコンのスタイル */
+  .maskIconEmail {
+    @include iconBaseStyle;
+
+    -webkit-mask-image: variables.$image-icon-email;
+    mask-image: variables.$image-icon-email;
+  }
+}
+
+@mixin maskIconArrowRight {
+  /* 右矢印アイコンのスタイル */
+  .maskIconArrowRight {
+    @include iconBaseStyle;
+
+    -webkit-mask-image: variables.$image-icon-arrow;
+    mask-image: variables.$image-icon-arrow;
+  }
+}
+
+@mixin maskIconArrowBottom {
+  /* 下矢印アイコンのスタイル */
+  .maskIconArrowBottom {
+    @include iconBaseStyle;
+
+    -webkit-mask-image: variables.$image-icon-arrow;
+    mask-image: variables.$image-icon-arrow;
+    rotate: 90deg;
+  }
+}
+
+@mixin maskIconArrowLeft {
+  /* 左矢印アイコンのスタイル */
+  .maskIconArrowLeft {
+    @include iconBaseStyle;
+
+    -webkit-mask-image: variables.$image-icon-arrow;
+    mask-image: variables.$image-icon-arrow;
+    rotate: 180deg;
+  }
+}
+
+@mixin maskIconArrowTop {
+  /* 上矢印アイコンのスタイル */
+  .maskIconArrowTop {
+    @include iconBaseStyle;
+
+    -webkit-mask-image: variables.$image-icon-arrow;
+    mask-image: variables.$image-icon-arrow;
+    rotate: 270deg;
   }
 }

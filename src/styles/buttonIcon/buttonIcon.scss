@@ -25,16 +25,15 @@
   @media (any-hover: hover) {
     transition: background-color 0.1s linear;
 
-    &_icon_mask {
-      transition: background-color 0.1s linear;
-    }
-
     &:hover,
     &:focus-visible {
       background-color: variables.$color-blue-dark;
-      #{$button}_icon_mask {
-        background-color: variables.$color-blue-dark;
-      }
     }
   }
 }
+
+@include mixins.maskIconEmail;
+@include mixins.maskIconArrowTop;
+@include mixins.maskIconArrowRight;
+@include mixins.maskIconArrowBottom;
+@include mixins.maskIconArrowLeft;

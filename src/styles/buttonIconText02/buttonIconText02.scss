@@ -14,15 +14,6 @@
   background-color: variables.$color-blue;
   border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
 
-  @media (any-hover: hover) {
-    transition: background-color 0.1s linear;
-
-    &:hover,
-    &:focus-visible {
-      background-color: variables.$color-blue-dark;
-    }
-  }
-
   &__reverse {
     flex-direction: row-reverse;
     padding: 8px 8px 8px 16px;
@@ -41,4 +32,15 @@
       background-color: variables.$color-white;
     }
   }
+
+  @media (any-hover: hover) {
+    transition: background-color 0.1s linear;
+
+    &:hover,
+    &:focus-visible {
+      background-color: variables.$color-blue-dark
+    }
+  }
 }
+
+@include mixins.maskIconEmail;
