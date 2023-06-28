@@ -52,9 +52,9 @@ button {
   height: 64px;
   padding: 8px 24px;
   font-size: 16px;
-  color: #2e63c5;
+  color: #6fa24a;
   background-color: #fff;
-  border: 1px solid #2e63c5;
+  border: 2px solid #6fa24a;
 }
 
 @media (any-hover: hover) {
@@ -63,6 +63,6 @@ button {
   }
 
   .buttonOutline:hover, .buttonOutline:focus-visible {
-    background-color: #e3edff;
+    background-color: #dcedd2;
   }
 }

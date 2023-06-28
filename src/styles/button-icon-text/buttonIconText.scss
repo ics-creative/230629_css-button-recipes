@@ -10,8 +10,8 @@
   align-items: center;
   padding: 8px 40px 8px 8px;
   color: variables.$color-white;
-  background-color: variables.$color-blue;
-  border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+  background-color: variables.$color-primary;
+  border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
 
   $button: &;
 
@@ -33,7 +33,7 @@
     border-radius: 50%;
 
     &_mask {
-      background-color: variables.$color-blue;
+      background-color: variables.$color-primary;
     }
   }
 
@@ -51,9 +51,9 @@
 
     &:hover,
     &:focus-visible {
-      background-color: variables.$color-blue-dark;
+      background-color: variables.$color-primary-dark;
       #{$button}_icon_mask {
-        background-color: variables.$color-blue-dark;
+        background-color: variables.$color-primary-dark;
       }
     }
   }

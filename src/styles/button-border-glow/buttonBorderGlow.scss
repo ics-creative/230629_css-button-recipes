@@ -15,7 +15,7 @@
   padding: 2px;
   color: variables.$color-white;
   background-color: variables.$color-gray;
-  border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+  border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
 
   $button: &;
 
@@ -27,11 +27,13 @@
     width: 100%;
     height: 100%;
     background: conic-gradient(from var(--angle), variables.$color-black, variables.$color-gray, variables.$color-black, variables.$color-gray, variables.$color-black);
-    border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+    animation: gradient-spin 3s linear 0s infinite;
+    border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
     opacity: 0;
   }
 
   @media (any-hover: hover) {
+
     #{$button}_bg {
       transition: opacity 0.3s linear;
     }
@@ -40,8 +42,9 @@
     &:focus-visible {
       #{$button}_bg {
         opacity: 1;
-        animation: gradient-spin 3s linear 0s infinite;
       }
+
+      background-color: variables.$color-gray;
     }
 
     @keyframes gradient-spin {
@@ -63,6 +66,6 @@
     width: 100%;
     height: 100%;
     background-color: variables.$color-black;
-    border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+    border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
   }
 }

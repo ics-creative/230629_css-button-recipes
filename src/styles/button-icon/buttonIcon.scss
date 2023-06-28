@@ -14,15 +14,10 @@
   justify-content: center;
   width: 80px;
   aspect-ratio: 1;
-  background-color: variables.$color-blue;
+  background-color: variables.$color-primary;
   border-radius: 50%;
 
   $button: &;
-
-  &:focus-visible {
-    outline-color: variables.$color-black;
-    outline-offset: 3px;
-  }
 
   &_item {
     background-color: variables.$color-white;
@@ -33,7 +28,7 @@
 
     &:hover,
     &:focus-visible {
-      background-color: variables.$color-blue-dark;
+      background-color: variables.$color-primary-dark;
     }
   }
 }

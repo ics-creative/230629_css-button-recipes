@@ -47,7 +47,7 @@ button {
   padding: 8px 16px;
   font-size: 16px;
   background-color: transparent;
-  border-radius: 32px;
+  border-radius: 32px; /* (buttonの高さ / 2) の値 */
 }
 
 @media (any-hover: hover) {

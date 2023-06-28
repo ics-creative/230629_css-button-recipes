@@ -55,8 +55,8 @@ button {
   padding: 8px 16px 8px 8px;
   font-size: 16px;
   color: #fff;
-  background-color: #2e63c5;
-  border-radius: 32px;
+  background-color: #6fa24a;
+  border-radius: 32px; /* (buttonの高さ / 2) の値 */
 }
 
 .buttonIconText02__reverse {
@@ -84,7 +84,7 @@ button {
   }
 
   .buttonIconText02:hover, .buttonIconText02:focus-visible {
-    background-color: #153979;
+    background-color: #54802f;
   }
 }
 

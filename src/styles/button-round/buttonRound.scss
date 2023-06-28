@@ -9,15 +9,15 @@
   align-items: center;
   justify-content: center;
   color: variables.$color-white;
-  background-color: variables.$color-blue;
-  border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+  background-color: variables.$color-primary;
+  border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
 
   @media (any-hover: hover) {
     transition: background-color 0.1s linear;
 
     &:hover,
     &:focus-visible {
-      background-color: variables.$color-blue-dark;
+      background-color: variables.$color-primary-dark;
     }
   }
 }

@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   color: variables.$color-white;
-  background-color: variables.$color-blue;
+  background-color: variables.$color-primary;
 
   @media (any-hover: hover) {
     transition: background-color 0.1s;
@@ -17,7 +17,7 @@
 
     &:hover,
     &:focus-visible {
-      background-color: variables.$color-blue-dark;
+      background-color: variables.$color-primary-dark;
     }
   }
 }

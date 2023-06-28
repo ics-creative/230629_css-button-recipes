@@ -6,7 +6,7 @@
   padding: 8px 16px;
   font-size: 16px;
   background-color: transparent;
-  border-radius: calc(64px / 2); // (buttonの高さ / 2) の値
+  border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
 
   @media (any-hover: hover) {
     transition: background-color 0.1s linear;

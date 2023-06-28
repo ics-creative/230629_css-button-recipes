@@ -51,8 +51,8 @@ button {
   padding: 8px 24px;
   padding: 2px;
   font-size: 16px;
-  background: linear-gradient(135deg, #2e63c5, #15ccab);
-  border-radius: 32px;
+  background: linear-gradient(135deg, #6fa24a, #15a1cc);
+  border-radius: 32px; /* (buttonの高さ / 2) の値 */
 }
 
 .buttonGlow::before {
@@ -63,9 +63,9 @@ button {
   width: 100%;
   height: 100%;
   content: "";
-  background: linear-gradient(135deg, #2e63c5, #15ccab);
+  background: linear-gradient(135deg, #6fa24a, #15a1cc);
   filter: blur(8px);
-  border-radius: 32px;
+  border-radius: 32px; /* (buttonの高さ / 2) の値 */
   opacity: 0;
 }
 
@@ -89,5 +89,5 @@ button {
   height: 100%;
   color: #fff;
   background-color: #222;
-  border-radius: 32px;
+  border-radius: 32px; /* (buttonの高さ / 2) の値 */
 }
