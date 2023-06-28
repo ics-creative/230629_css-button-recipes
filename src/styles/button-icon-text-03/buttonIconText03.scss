@@ -54,23 +54,13 @@
       #{$button}_icon {
         transform: translateX(4px);
 
-        &__bottom {
-          transform: translateY(4px);
-        }
-
         &__left {
           transform: translateX(-4px);
-        }
-
-        &__top {
-          transform: translateY(-4px);
         }
       }
     }
   }
 }
 
-@include mixins.maskIconArrowTop;
 @include mixins.maskIconArrowRight;
-@include mixins.maskIconArrowBottom;
 @include mixins.maskIconArrowLeft;
