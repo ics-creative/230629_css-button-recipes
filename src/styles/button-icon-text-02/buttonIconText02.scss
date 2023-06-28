@@ -9,23 +9,25 @@
   display: flex;
   gap: 8px;
   align-items: center;
-  justify-content: center;
-  padding: 8px 16px 8px 8px;
+  padding: 8px 64px 8px 8px;
   color: variables.$color-white;
   background-color: variables.$color-primary;
   border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
 
+  $button: &;
+
   &__reverse {
     flex-direction: row-reverse;
-    padding: 8px 8px 8px 16px;
+    padding: 8px 8px 8px 64px;
   }
 
   &_icon {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    aspect-ratio: 1;
+    width: 48px;
+    height: 48px;
     overflow: hidden;
     border-radius: 50%;
 
@@ -34,14 +36,31 @@
     }
   }
 
+  &_text {
+    flex-shrink: 1;
+    width: 100%;
+  }
+
   @media (any-hover: hover) {
     transition: background-color 0.1s linear;
 
+    &_icon {
+      transition: transform 0.1s linear;
+    }
+
     &:hover,
     &:focus-visible {
-      background-color: variables.$color-primary-dark
+      background-color: variables.$color-primary-dark;
+      #{$button}_icon {
+        transform: translateX(4px);
+
+        &__left {
+          transform: translateX(-4px);
+        }
+      }
     }
   }
 }
 
-@include mixins.maskIconEmail;
+@include mixins.maskIconArrowRight;
+@include mixins.maskIconArrowLeft;

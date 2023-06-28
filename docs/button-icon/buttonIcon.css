@@ -82,6 +82,7 @@ button {
   -webkit-mask-position: center;
   mask-position: center;
   mask-repeat: no-repeat;
+  overflow-wrap: anywhere;
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMy41IiB5PSI1LjUiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxMiIgcng9IjEuNSIgc3Ryb2tlPSJibGFjayIvPgo8cGF0aCBkPSJNNiA5QzYgOSAxMS41IDEyIDEyIDEyQzEyLjUgMTIgMTggOSAxOCA5IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
   mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMy41IiB5PSI1LjUiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxMiIgcng9IjEuNSIgc3Ryb2tlPSJibGFjayIvPgo8cGF0aCBkPSJNNiA5QzYgOSAxMS41IDEyIDEyIDEyQzEyLjUgMTIgMTggOSAxOCA5IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
 }
@@ -96,6 +97,7 @@ button {
   -webkit-mask-position: center;
   mask-position: center;
   mask-repeat: no-repeat;
+  overflow-wrap: anywhere;
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
   mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
   rotate: 270deg;
@@ -111,6 +113,7 @@ button {
   -webkit-mask-position: center;
   mask-position: center;
   mask-repeat: no-repeat;
+  overflow-wrap: anywhere;
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
   mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
 }
@@ -125,6 +128,7 @@ button {
   -webkit-mask-position: center;
   mask-position: center;
   mask-repeat: no-repeat;
+  overflow-wrap: anywhere;
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
   mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
   rotate: 90deg;
@@ -140,6 +144,7 @@ button {
   -webkit-mask-position: center;
   mask-position: center;
   mask-repeat: no-repeat;
+  overflow-wrap: anywhere;
   -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
   mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDZMMTUuMjkyOSAxMS4yOTI5QzE1LjY4MzQgMTEuNjgzNCAxNS42ODM0IDEyLjMxNjYgMTUuMjkyOSAxMi43MDcxTDEwIDE4IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
   rotate: 180deg;
