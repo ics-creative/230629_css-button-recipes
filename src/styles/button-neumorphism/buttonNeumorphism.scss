@@ -2,6 +2,7 @@
 @use "../_variables.scss" as variables;
 @include mixins.baseStyle;
 
+/* ボタンのスタイル */
 .buttonNeumorphism {
   display: flex;
   align-items: center;

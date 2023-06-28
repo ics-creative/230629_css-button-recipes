@@ -30,11 +30,8 @@ body.dark {
 
 /* aタグのリセットCSS */
 a {
-  text-decoration: none;
-}
-
-a:visited {
   color: inherit;
+  text-decoration: none;
 }
 
 /* buttonタグのリセットCSS */
@@ -43,7 +40,8 @@ button {
   border: 0;
 }
 
-.buttonGlow {
+/* ボタンのスタイル */
+.buttonOutlineGradient {
   position: relative;
   width: 100%;
   max-width: 320px;
@@ -51,11 +49,12 @@ button {
   padding: 8px 24px;
   padding: 2px;
   font-size: 16px;
+  text-align: center;
   background: linear-gradient(135deg, #6fa24a, #15a1cc);
   border-radius: 32px; /* (buttonの高さ / 2) の値 */
 }
 
-.buttonGlow::before {
+.buttonOutlineGradient::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -69,18 +68,7 @@ button {
   opacity: 0;
 }
 
-@media (any-hover: hover) {
-  .buttonGlow::before {
-    transition: opacity 0.1s linear;
-    will-change: filter;
-  }
-
-  .buttonGlow:hover::before, .buttonGlow:focus-visible::before {
-    opacity: 1;
-  }
-}
-
-.buttonGlow_item {
+.buttonOutlineGradient_item {
   position: relative;
   display: flex;
   align-items: center;
@@ -90,4 +78,15 @@ button {
   color: #fff;
   background-color: #222;
   border-radius: 32px; /* (buttonの高さ / 2) の値 */
+}
+
+@media (any-hover: hover) {
+  .buttonOutlineGradient::before {
+    transition: opacity 0.1s linear;
+    will-change: filter;
+  }
+
+  .buttonOutlineGradient:hover::before, .buttonOutlineGradient:focus-visible::before {
+    opacity: 1;
+  }
 }

@@ -9,6 +9,7 @@ li {
   list-style-type: none;
 }
 
+/* ボタンを横並びにするスタイル */
 .menu {
   display: flex;
   padding: 0 16px;
@@ -16,6 +17,7 @@ li {
   box-shadow: 0 0 4px rgb(0 0 0 / 30%);
 }
 
+/* ボタンのスタイル */
 .buttonUnderline {
   position: relative;
   display: flex;

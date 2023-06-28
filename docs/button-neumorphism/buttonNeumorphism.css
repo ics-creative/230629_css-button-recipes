@@ -30,11 +30,8 @@ body.dark {
 
 /* aタグのリセットCSS */
 a {
-  text-decoration: none;
-}
-
-a:visited {
   color: inherit;
+  text-decoration: none;
 }
 
 /* buttonタグのリセットCSS */
@@ -43,6 +40,7 @@ button {
   border: 0;
 }
 
+/* ボタンのスタイル */
 .buttonNeumorphism {
   display: flex;
   align-items: center;

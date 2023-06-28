@@ -2,8 +2,9 @@
 @use "../_variables.scss" as variables;
 @include mixins.baseStyle;
 
+/* ボタンのスタイル */
 .buttonIconText02 {
-  @include mixins.buttonBaseSize;
+  @include mixins.buttonBaseStyle;
 
   display: flex;
   gap: 8px;

@@ -2,14 +2,18 @@
 @use "../_variables.scss" as variables;
 @include mixins.baseStyle;
 
-@property --angle{
-  syntax: '<angle>'; /* its type */
+/*
+ * 角度の値を保持するCSS変数を定義
+ * 対応ブラウザ: https://caniuse.com/?search=%40property
+ */
+@property --angle {
+  syntax: '<angle>';
   inherits: false;
-  initial-value: 0deg; /* the initial value */
+  initial-value: 0deg;
 }
 
-.buttonBorderGlow {
-  @include mixins.buttonBaseSize;
+.buttonOutlineGlow {
+  @include mixins.buttonBaseStyle;
 
   position: relative;
   padding: 2px;
@@ -27,34 +31,17 @@
     width: 100%;
     height: 100%;
     background: conic-gradient(from var(--angle), variables.$color-black, variables.$color-gray, variables.$color-black, variables.$color-gray, variables.$color-black);
-    animation: gradient-spin 3s linear 0s infinite;
     border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
     opacity: 0;
+    animation: gradient-spin 3s linear 0s infinite;
   }
-
-  @media (any-hover: hover) {
-
-    #{$button}_bg {
-      transition: opacity 0.3s linear;
+  @keyframes gradient-spin {
+    0% {
+      --angle: 0deg;
     }
 
-    &:hover,
-    &:focus-visible {
-      #{$button}_bg {
-        opacity: 1;
-      }
-
-      background-color: variables.$color-gray;
-    }
-
-    @keyframes gradient-spin {
-      0% {
-        --angle: 0deg;
-      }
-
-      100% {
-        --angle: 360deg;
-      }
+    100% {
+      --angle: 360deg;
     }
   }
 
@@ -67,5 +54,20 @@
     height: 100%;
     background-color: variables.$color-black;
     border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
+  }
+
+  @media (any-hover: hover) {
+    #{$button}_bg {
+      transition: opacity 0.3s linear;
+    }
+
+    &:hover,
+    &:focus-visible {
+      #{$button}_bg {
+        opacity: 1;
+      }
+
+      background-color: variables.$color-gray;
+    }
   }
 }

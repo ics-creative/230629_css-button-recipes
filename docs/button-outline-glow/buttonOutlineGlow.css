@@ -30,11 +30,8 @@ body.dark {
 
 /* aタグのリセットCSS */
 a {
-  text-decoration: none;
-}
-
-a:visited {
   color: inherit;
+  text-decoration: none;
 }
 
 /* buttonタグのリセットCSS */
@@ -43,13 +40,17 @@ button {
   border: 0;
 }
 
+/*
+ * 角度の値を保持するCSS変数を定義
+ * 対応ブラウザ: https://caniuse.com/?search=%40property
+ */
 @property --angle {
-  syntax: "<angle>"; /* its type */
+  syntax: "<angle>";
   inherits: false;
-  initial-value: 0deg; /* the initial value */
+  initial-value: 0deg;
 }
 
-.buttonBorderGlow {
+.buttonOutlineGlow {
   position: relative;
   width: 100%;
   max-width: 320px;
@@ -58,11 +59,12 @@ button {
   padding: 2px;
   font-size: 16px;
   color: #fff;
+  text-align: center;
   background-color: #939393;
   border-radius: 32px; /* (buttonの高さ / 2) の値 */
 }
 
-.buttonBorderGlow_bg {
+.buttonOutlineGlow_bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,31 +77,17 @@ button {
   animation: gradient-spin 3s linear 0s infinite;
 }
 
-@media (any-hover: hover) {
-  .buttonBorderGlow .buttonBorderGlow_bg {
-    transition: opacity 0.3s linear;
+@keyframes gradient-spin {
+  0% {
+    --angle: 0deg;
   }
 
-  .buttonBorderGlow:hover, .buttonBorderGlow:focus-visible {
-    background-color: #939393;
-  }
-
-  .buttonBorderGlow:hover .buttonBorderGlow_bg, .buttonBorderGlow:focus-visible .buttonBorderGlow_bg {
-    opacity: 1;
-  }
-
-  @keyframes gradient-spin {
-    0% {
-      --angle: 0deg;
-    }
-
-    100% {
-      --angle: 360deg;
-    }
+  100% {
+    --angle: 360deg;
   }
 }
 
-.buttonBorderGlow_item {
+.buttonOutlineGlow_item {
   position: relative;
   display: flex;
   align-items: center;
@@ -108,4 +96,18 @@ button {
   height: 100%;
   background-color: #222;
   border-radius: 32px; /* (buttonの高さ / 2) の値 */
+}
+
+@media (any-hover: hover) {
+  .buttonOutlineGlow .buttonOutlineGlow_bg {
+    transition: opacity 0.3s linear;
+  }
+
+  .buttonOutlineGlow:hover, .buttonOutlineGlow:focus-visible {
+    background-color: #939393;
+  }
+
+  .buttonOutlineGlow:hover .buttonOutlineGlow_bg, .buttonOutlineGlow:focus-visible .buttonOutlineGlow_bg {
+    opacity: 1;
+  }
 }

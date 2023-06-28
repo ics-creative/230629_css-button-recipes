@@ -2,8 +2,9 @@
 @use "../_variables.scss" as variables;
 @include mixins.baseStyle;
 
-.buttonGlow {
-  @include mixins.buttonBaseSize;
+/* ボタンのスタイル */
+.buttonOutlineGradient {
+  @include mixins.buttonBaseStyle;
 
   position: relative;
   padding: 2px;
@@ -24,6 +25,18 @@
     opacity: 0;
   }
 
+  &_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: variables.$color-white;
+    background-color: variables.$color-black;
+    border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
+  }
+
   @media (any-hover: hover) {
     &::before {
       transition: opacity 0.1s linear;
@@ -36,17 +49,5 @@
         opacity: 1;
       }
     }
-  }
-
-  &_item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    color: variables.$color-white;
-    background-color: variables.$color-black;
-    border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
   }
 }

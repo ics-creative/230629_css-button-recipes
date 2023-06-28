@@ -30,11 +30,8 @@ body.dark {
 
 /* aタグのリセットCSS */
 a {
-  text-decoration: none;
-}
-
-a:visited {
   color: inherit;
+  text-decoration: none;
 }
 
 /* buttonタグのリセットCSS */
@@ -43,12 +40,14 @@ button {
   border: 0;
 }
 
+/* ボタンを横並びにするスタイル */
 .buttonList {
   display: grid;
   grid-template-columns: repeat(5, auto);
   column-gap: 16px;
 }
 
+/* ボタンのスタイル */
 .buttonIcon {
   display: flex;
   align-items: center;
