@@ -9,7 +9,7 @@ module.exports = {
     "property-no-vendor-prefix": [
       true,
       {
-        ignoreProperties: ["mask-size", "mask-repeat", "mask-image", "mask-position", "user-select"]
+        ignoreProperties: ["user-select"]
       }
     ]
   }

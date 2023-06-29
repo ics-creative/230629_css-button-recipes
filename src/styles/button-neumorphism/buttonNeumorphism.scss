@@ -16,10 +16,6 @@
 
   $button: &;
 
-  &_item {
-    background-color: variables.$color-black;
-  }
-
   @media (any-hover: hover) {
     transition: box-shadow 0.2s;
 
@@ -34,4 +30,4 @@
   }
 }
 
-@include mixins.maskIconEmail;
+@include mixins.iconEmail;

@@ -27,11 +27,6 @@
     width: 40px;
     aspect-ratio: 1;
     overflow: hidden;
-    border-radius: 50%;
-
-    &_mask {
-      background-color: variables.$color-white;
-    }
   }
 
   @media (any-hover: hover) {
@@ -43,4 +38,4 @@
   }
 }
 
-@include mixins.maskIconEmail;
+@include mixins.iconEmail;

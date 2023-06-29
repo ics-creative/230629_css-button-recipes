@@ -36,6 +36,7 @@ button {
   font-size: 16px;
   color: #fff;
   text-align: center;
+  overflow-wrap: anywhere;
   background-color: #939393;
   border-radius: 32px; /* (buttonの高さ / 2) の値 */
 }

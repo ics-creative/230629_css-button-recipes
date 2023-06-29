@@ -32,10 +32,6 @@
     overflow: hidden;
     background-color: variables.$color-white;
     border-radius: 50%;
-
-    &_mask {
-      background-color: variables.$color-primary;
-    }
   }
 
   &_text {
@@ -46,21 +42,18 @@
   @media (any-hover: hover) {
     transition: background-color 0.2s;
 
-    &_icon_mask {
+    &_icon_item {
       transition: background-color 0.2s;
     }
 
     &:hover {
       background-color: variables.$color-primary-dark;
-      #{$button}_icon_mask {
-        background-color: variables.$color-primary-dark;
-      }
     }
   }
 }
 
-@include mixins.maskIconEmail;
-@include mixins.maskIconArrowTop;
-@include mixins.maskIconArrowRight;
-@include mixins.maskIconArrowBottom;
-@include mixins.maskIconArrowLeft;
+@include mixins.iconEmail;
+@include mixins.iconArrowTop;
+@include mixins.iconArrowRight;
+@include mixins.iconArrowBottom;
+@include mixins.iconArrowLeft;

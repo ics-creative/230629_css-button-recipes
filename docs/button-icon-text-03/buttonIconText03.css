@@ -30,6 +30,7 @@ button {
   font-size: 16px;
   color: #fff;
   text-align: center;
+  overflow-wrap: anywhere;
   background-color: #6fa24a;
   border-radius: 32px; /* (buttonの高さ / 2) の値 */
 }
@@ -46,11 +47,6 @@ button {
   width: 40px;
   aspect-ratio: 1;
   overflow: hidden;
-  border-radius: 50%;
-}
-
-.buttonIconText03_icon_mask {
-  background-color: #fff;
 }
 
 @media (any-hover: hover) {
@@ -62,16 +58,8 @@ button {
     background-color: #54802f;
   }
 } /* お問い合わせ用アイコンのスタイル */
-.maskIconEmail {
+.iconEmail {
   display: block;
   width: 32px;
   height: 32px;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-position: center;
-  mask-position: center;
-  mask-repeat: no-repeat;
-  overflow-wrap: anywhere;
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMy41IiB5PSI1LjUiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxMiIgcng9IjEuNSIgc3Ryb2tlPSJibGFjayIvPgo8cGF0aCBkPSJNNiA5QzYgOSAxMS41IDEyIDEyIDEyQzEyLjUgMTIgMTggOSAxOCA5IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
-  mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMy41IiB5PSI1LjUiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxMiIgcng9IjEuNSIgc3Ryb2tlPSJibGFjayIvPgo8cGF0aCBkPSJNNiA5QzYgOSAxMS41IDEyIDEyIDEyQzEyLjUgMTIgMTggOSAxOCA5IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+");
 }

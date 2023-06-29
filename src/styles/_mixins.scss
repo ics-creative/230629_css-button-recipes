@@ -25,69 +25,52 @@
   font-family: sans-serif;
   font-size: 16px;
   text-align: center;
+  overflow-wrap: anywhere;
 }
 
 @mixin iconBaseStyle {
   display: block;
   width: 32px;
   height: 32px;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-position: center;
-  mask-position: center;
-  mask-repeat: no-repeat;
-  overflow-wrap: anywhere;
 }
 
-@mixin maskIconEmail {
+@mixin iconEmail {
   /* お問い合わせ用アイコンのスタイル */
-  .maskIconEmail {
+  .iconEmail {
     @include iconBaseStyle;
-
-    -webkit-mask-image: variables.$image-icon-email;
-    mask-image: variables.$image-icon-email;
   }
 }
 
-@mixin maskIconArrowRight {
+@mixin iconArrowRight {
   /* 右矢印アイコンのスタイル */
-  .maskIconArrowRight {
+  .iconArrowRight {
     @include iconBaseStyle;
-
-    -webkit-mask-image: variables.$image-icon-arrow;
-    mask-image: variables.$image-icon-arrow;
   }
 }
 
-@mixin maskIconArrowBottom {
+@mixin iconArrowBottom {
   /* 下矢印アイコンのスタイル */
-  .maskIconArrowBottom {
+  .iconArrowBottom {
     @include iconBaseStyle;
 
-    -webkit-mask-image: variables.$image-icon-arrow;
-    mask-image: variables.$image-icon-arrow;
     rotate: 90deg;
   }
 }
 
-@mixin maskIconArrowLeft {
+@mixin iconArrowLeft {
   /* 左矢印アイコンのスタイル */
-  .maskIconArrowLeft {
+  .iconArrowLeft {
     @include iconBaseStyle;
 
-    -webkit-mask-image: variables.$image-icon-arrow;
-    mask-image: variables.$image-icon-arrow;
     rotate: 180deg;
   }
 }
 
-@mixin maskIconArrowTop {
+@mixin iconArrowTop {
   /* 上矢印アイコンのスタイル */
-  .maskIconArrowTop {
+  .iconArrowTop {
     @include iconBaseStyle;
 
-    -webkit-mask-image: variables.$image-icon-arrow;
-    mask-image: variables.$image-icon-arrow;
     rotate: 270deg;
   }
 }

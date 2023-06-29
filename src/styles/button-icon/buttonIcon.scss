@@ -14,10 +14,6 @@
 
   $button: &;
 
-  &_item {
-    background-color: variables.$color-white;
-  }
-
   @media (any-hover: hover) {
     transition: background-color 0.2s;
 
@@ -27,8 +23,8 @@
   }
 }
 
-@include mixins.maskIconEmail;
-@include mixins.maskIconArrowTop;
-@include mixins.maskIconArrowRight;
-@include mixins.maskIconArrowBottom;
-@include mixins.maskIconArrowLeft;
+@include mixins.iconEmail;
+@include mixins.iconArrowTop;
+@include mixins.iconArrowRight;
+@include mixins.iconArrowBottom;
+@include mixins.iconArrowLeft;
