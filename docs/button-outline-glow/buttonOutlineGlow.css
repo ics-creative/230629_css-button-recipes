@@ -1,16 +1,19 @@
 @charset "UTF-8";
 
-/* aタグのリセットCSS（必要に応じて削除してください） */
+/* aタグのリセットCSS（不要な場合、セレクタごと削除してください） */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* buttonタグのリセットCSS（必要に応じて削除してください） */
+/* buttonタグのリセットCSS（不要な場合、セレクタごと削除してください） */
 button {
+  padding: 0;
+  font-family: inherit;
   appearance: none;
   cursor: pointer;
-  border: 0;
+  background-color: transparent;
+  border: none;
 }
 
 /*
