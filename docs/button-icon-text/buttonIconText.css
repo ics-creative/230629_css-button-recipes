@@ -71,40 +71,17 @@ button {
   }
 }
 
-/* お問い合わせ用アイコンのスタイル */
-.iconEmail {
-  display: block;
-  width: 32px;
-  height: 32px;
-}
-
 /* 上矢印アイコンのスタイル */
 .iconArrowTop {
-  display: block;
-  width: 32px;
-  height: 32px;
   rotate: 270deg;
-}
-
-/* 右矢印アイコンのスタイル */
-.iconArrowRight {
-  display: block;
-  width: 32px;
-  height: 32px;
 }
 
 /* 下矢印アイコンのスタイル */
 .iconArrowBottom {
-  display: block;
-  width: 32px;
-  height: 32px;
   rotate: 90deg;
 }
 
 /* 左矢印アイコンのスタイル */
 .iconArrowLeft {
-  display: block;
-  width: 32px;
-  height: 32px;
   rotate: 180deg;
 }

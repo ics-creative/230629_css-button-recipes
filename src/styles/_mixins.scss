@@ -28,31 +28,9 @@
   overflow-wrap: anywhere;
 }
 
-@mixin iconBaseStyle {
-  display: block;
-  width: 32px;
-  height: 32px;
-}
-
-@mixin iconEmail {
-  /* お問い合わせ用アイコンのスタイル */
-  .iconEmail {
-    @include iconBaseStyle;
-  }
-}
-
-@mixin iconArrowRight {
-  /* 右矢印アイコンのスタイル */
-  .iconArrowRight {
-    @include iconBaseStyle;
-  }
-}
-
 @mixin iconArrowBottom {
   /* 下矢印アイコンのスタイル */
   .iconArrowBottom {
-    @include iconBaseStyle;
-
     rotate: 90deg;
   }
 }
@@ -60,8 +38,6 @@
 @mixin iconArrowLeft {
   /* 左矢印アイコンのスタイル */
   .iconArrowLeft {
-    @include iconBaseStyle;
-
     rotate: 180deg;
   }
 }
@@ -69,8 +45,6 @@
 @mixin iconArrowTop {
   /* 上矢印アイコンのスタイル */
   .iconArrowTop {
-    @include iconBaseStyle;
-
     rotate: 270deg;
   }
 }

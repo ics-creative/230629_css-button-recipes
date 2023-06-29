@@ -76,17 +76,7 @@ button {
   }
 }
 
-/* 右矢印アイコンのスタイル */
-.iconArrowRight {
-  display: block;
-  width: 32px;
-  height: 32px;
-}
-
 /* 左矢印アイコンのスタイル */
 .iconArrowLeft {
-  display: block;
-  width: 32px;
-  height: 32px;
   rotate: 180deg;
 }

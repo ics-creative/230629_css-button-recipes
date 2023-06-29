@@ -57,9 +57,4 @@ button {
   .buttonIconText03:hover {
     background-color: #54802f;
   }
-} /* お問い合わせ用アイコンのスタイル */
-.iconEmail {
-  display: block;
-  width: 32px;
-  height: 32px;
 }

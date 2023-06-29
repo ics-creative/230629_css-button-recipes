@@ -43,10 +43,3 @@ button {
     box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
   }
 }
-
-/* お問い合わせ用アイコンのスタイル */
-.iconEmail {
-  display: block;
-  width: 32px;
-  height: 32px;
-}
