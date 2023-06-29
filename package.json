@@ -4,7 +4,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "compile": "rimraf docs/**/*.css && sass src/styles:docs --no-source-map && stylelint \"**/*.css\" --fix",
+    "compile": "rimraf docs/*.css docs/**/*.css && sass src/styles:docs --no-source-map && stylelint \"**/*.css\" --fix",
     "format": "stylelint \"**/*.scss\" --fix"
   },
   "devDependencies": {
