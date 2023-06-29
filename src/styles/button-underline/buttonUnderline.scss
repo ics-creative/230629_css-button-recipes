@@ -14,6 +14,7 @@
   font-size: 15px;
   color: variables.$color-black;
   text-align: center;
+  overflow-wrap: anywhere;
   background: transparent;
 
   &::after {

@@ -28,6 +28,7 @@ button {
   font-size: 15px;
   color: #222;
   text-align: center;
+  overflow-wrap: anywhere;
   background: transparent;
 }
 
