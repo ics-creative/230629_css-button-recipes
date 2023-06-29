@@ -48,8 +48,7 @@
       transition: transform 0.2s;
     }
 
-    &:hover,
-    &:focus-visible {
+    &:hover {
       background-color: variables.$color-primary-dark;
       #{$button}_icon {
         transform: translateX(4px);

@@ -40,8 +40,7 @@
       transition: transform 0.2s $ease-out-expo;
     }
 
-    &:hover,
-    &:focus-visible {
+    &:hover {
       &::after {
         transition: transform 0.4s $ease-in-out-expo;
         transform: scaleX(1);

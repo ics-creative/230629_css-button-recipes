@@ -17,8 +17,7 @@
   @media (any-hover: hover) {
     transition: background-color 0.2s;
 
-    &:hover,
-    &:focus-visible {
+    &:hover {
       background-color: variables.$color-primary-dark;
     }
   }

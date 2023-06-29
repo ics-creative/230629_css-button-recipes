@@ -64,15 +64,15 @@ button {
     transition: transform 0.2s;
   }
 
-  .buttonIconText02:hover, .buttonIconText02:focus-visible {
+  .buttonIconText02:hover {
     background-color: #54802f;
   }
 
-  .buttonIconText02:hover .buttonIconText02_icon, .buttonIconText02:focus-visible .buttonIconText02_icon {
+  .buttonIconText02:hover .buttonIconText02_icon {
     transform: translateX(4px);
   }
 
-  .buttonIconText02:hover .buttonIconText02_icon__left, .buttonIconText02:focus-visible .buttonIconText02_icon__left {
+  .buttonIconText02:hover .buttonIconText02_icon__left {
     transform: translateX(-4px);
   }
 }

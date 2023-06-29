@@ -59,7 +59,7 @@ button {
     will-change: filter;
   }
 
-  .buttonOutlineGradient:hover::before, .buttonOutlineGradient:focus-visible::before {
+  .buttonOutlineGradient:hover::before {
     opacity: 1;
   }
 }

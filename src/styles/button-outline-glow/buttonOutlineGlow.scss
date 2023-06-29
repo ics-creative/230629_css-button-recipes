@@ -62,8 +62,7 @@
       transition: opacity 0.3s;
     }
 
-    &:hover,
-    &:focus-visible {
+    &:hover {
       #{$button}_bg {
         opacity: 1;
       }

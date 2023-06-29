@@ -46,7 +46,7 @@ button {
     transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
-  .buttonUnderline:hover::after, .buttonUnderline:focus-visible::after {
+  .buttonUnderline:hover::after {
     transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
     transform: scaleX(1);
     transform-origin: left top;

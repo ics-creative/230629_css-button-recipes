@@ -76,11 +76,11 @@ button {
     transition: opacity 0.3s;
   }
 
-  .buttonOutlineGlow:hover, .buttonOutlineGlow:focus-visible {
+  .buttonOutlineGlow:hover {
     background-color: #939393;
   }
 
-  .buttonOutlineGlow:hover .buttonOutlineGlow_bg, .buttonOutlineGlow:focus-visible .buttonOutlineGlow_bg {
+  .buttonOutlineGlow:hover .buttonOutlineGlow_bg {
     opacity: 1;
   }
 }

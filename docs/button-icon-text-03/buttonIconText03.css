@@ -55,7 +55,7 @@ button {
     transition: background-color 0.2s;
   }
 
-  .buttonIconText03:hover, .buttonIconText03:focus-visible {
+  .buttonIconText03:hover {
     background-color: #54802f;
   }
 }

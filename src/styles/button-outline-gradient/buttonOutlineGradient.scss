@@ -43,8 +43,7 @@
       will-change: filter;
     }
 
-    &:hover,
-    &:focus-visible {
+    &:hover {
       &::before {
         opacity: 1;
       }

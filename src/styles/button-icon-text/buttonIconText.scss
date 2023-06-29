@@ -50,8 +50,7 @@
       transition: background-color 0.2s;
     }
 
-    &:hover,
-    &:focus-visible {
+    &:hover {
       background-color: variables.$color-primary-dark;
       #{$button}_icon_mask {
         background-color: variables.$color-primary-dark;

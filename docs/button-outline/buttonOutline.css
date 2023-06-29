@@ -35,7 +35,7 @@ button {
     transition: background-color 0.2s;
   }
 
-  .buttonOutline:hover, .buttonOutline:focus-visible {
+  .buttonOutline:hover {
     background-color: #dcedd2;
   }
 }

@@ -33,7 +33,7 @@ button {
     transition: background-color 0.2s;
   }
 
-  .buttonIcon:hover, .buttonIcon:focus-visible {
+  .buttonIcon:hover {
     background-color: #54802f;
   }
 }

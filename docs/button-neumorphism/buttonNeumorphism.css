@@ -35,7 +35,7 @@ button {
     transition: box-shadow 0.2s;
   }
 
-  .buttonNeumorphism:hover, .buttonNeumorphism:focus-visible {
+  .buttonNeumorphism:hover {
     box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgb(0 0 0 / 24%);
   }
 

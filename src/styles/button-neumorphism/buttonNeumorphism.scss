@@ -23,8 +23,7 @@
   @media (any-hover: hover) {
     transition: box-shadow 0.2s;
 
-    &:hover,
-    &:focus-visible {
+    &:hover {
       box-shadow: -2px -2px 4px variables.$color-white, 2px 2px 4px rgb(0 0 0 / 24%);
     }
 
