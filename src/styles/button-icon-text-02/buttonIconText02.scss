@@ -1,6 +1,6 @@
 @use "../_mixins.scss" as mixins;
 @use "../_variables.scss" as variables;
-@include mixins.baseStyle;
+@include mixins.resetStyle;
 
 /* ボタンのスタイル */
 .buttonIconText02 {

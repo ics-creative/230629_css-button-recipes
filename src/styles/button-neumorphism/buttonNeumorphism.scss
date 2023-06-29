@@ -1,6 +1,6 @@
 @use "../_mixins.scss" as mixins;
 @use "../_variables.scss" as variables;
-@include mixins.baseStyle;
+@include mixins.resetStyle;
 
 /* ボタンのスタイル */
 .buttonNeumorphism {
@@ -9,6 +9,7 @@
   justify-content: center;
   width: 80px;
   aspect-ratio: 1;
+  color: variables.$color-black;
   background-color: variables.$color-gray-light;
   border-radius: 50%;
   box-shadow: -4px -4px 8px variables.$color-white, 4px 4px 8px rgb(0 0 0 / 24%);

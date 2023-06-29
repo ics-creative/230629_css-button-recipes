@@ -1,13 +1,6 @@
 @use "../_mixins.scss" as mixins;
 @use "../_variables.scss" as variables;
-@include mixins.baseStyle;
-
-/* ボタンを横並びにするスタイル */
-.buttonList {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  column-gap: 16px;
-}
+@include mixins.resetStyle;
 
 /* ボタンのスタイル */
 .buttonIcon {

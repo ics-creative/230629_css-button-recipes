@@ -1,6 +1,6 @@
 @use "../_mixins.scss" as mixins;
 @use "../_variables.scss" as variables;
-@include mixins.baseStyle;
+@include mixins.resetStyle;
 
 /* ボタンのスタイル */
 .buttonBasic {
@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px 24px;
   color: variables.$color-white;
   background-color: variables.$color-primary;
 

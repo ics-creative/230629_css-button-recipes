@@ -1,21 +1,6 @@
 @use "../_mixins.scss" as mixins;
 @use "../_variables.scss" as variables;
-@include mixins.baseStyle;
-
-ul,
-li {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-/* ボタンを横並びにするスタイル */
-.menu {
-  display: flex;
-  padding: 0 16px;
-  background-color: variables.$color-white;
-  box-shadow: 0 0 4px rgb(0 0 0 / 30%);
-}
+@include mixins.resetStyle;
 
 /* ボタンのスタイル */
 .buttonUnderline {
@@ -27,6 +12,7 @@ li {
   padding: 0 24px;
   overflow: hidden;
   font-size: 15px;
+  color: variables.$color-black;
   text-align: center;
   background: transparent;
 
