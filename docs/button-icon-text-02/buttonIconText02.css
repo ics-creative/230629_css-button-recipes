@@ -57,11 +57,11 @@ button {
 
 @media (any-hover: hover) {
   .buttonIconText02 {
-    transition: background-color 0.1s linear;
+    transition: background-color 0.2s;
   }
 
   .buttonIconText02_icon {
-    transition: transform 0.1s linear;
+    transition: transform 0.2s;
   }
 
   .buttonIconText02:hover, .buttonIconText02:focus-visible {

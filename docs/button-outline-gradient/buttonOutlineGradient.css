@@ -55,7 +55,7 @@ button {
 
 @media (any-hover: hover) {
   .buttonOutlineGradient::before {
-    transition: opacity 0.1s linear;
+    transition: opacity 0.2s;
     will-change: filter;
   }
 

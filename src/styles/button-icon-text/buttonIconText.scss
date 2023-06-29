@@ -44,10 +44,10 @@
   }
 
   @media (any-hover: hover) {
-    transition: background-color 0.1s linear;
+    transition: background-color 0.2s;
 
     &_icon_mask {
-      transition: background-color 0.1s linear;
+      transition: background-color 0.2s;
     }
 
     &:hover,

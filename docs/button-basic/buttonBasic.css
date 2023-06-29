@@ -31,8 +31,7 @@ button {
 
 @media (any-hover: hover) {
   .buttonBasic {
-    transition: background-color 0.1s;
-    transition-timing-function: linear;
+    transition: background-color 0.2s;
   }
 
   .buttonBasic:hover, .buttonBasic:focus-visible {

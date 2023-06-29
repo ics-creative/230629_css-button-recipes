@@ -52,7 +52,7 @@ button {
 
 @media (any-hover: hover) {
   .buttonIconText03 {
-    transition: background-color 0.1s linear;
+    transition: background-color 0.2s;
   }
 
   .buttonIconText03:hover, .buttonIconText03:focus-visible {

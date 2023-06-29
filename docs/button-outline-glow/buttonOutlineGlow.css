@@ -73,7 +73,7 @@ button {
 
 @media (any-hover: hover) {
   .buttonOutlineGlow .buttonOutlineGlow_bg {
-    transition: opacity 0.3s linear;
+    transition: opacity 0.3s;
   }
 
   .buttonOutlineGlow:hover, .buttonOutlineGlow:focus-visible {

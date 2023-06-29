@@ -42,10 +42,10 @@
   }
 
   @media (any-hover: hover) {
-    transition: background-color 0.1s linear;
+    transition: background-color 0.2s;
 
     &_icon {
-      transition: transform 0.1s linear;
+      transition: transform 0.2s;
     }
 
     &:hover,

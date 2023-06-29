@@ -15,7 +15,7 @@
   border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
 
   @media (any-hover: hover) {
-    transition: background-color 0.1s linear;
+    transition: background-color 0.2s;
 
     &:hover,
     &:focus-visible {

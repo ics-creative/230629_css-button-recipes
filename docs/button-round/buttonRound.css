@@ -32,7 +32,7 @@ button {
 
 @media (any-hover: hover) {
   .buttonRound {
-    transition: background-color 0.1s linear;
+    transition: background-color 0.2s;
   }
 
   .buttonRound:hover, .buttonRound:focus-visible {

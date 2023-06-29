@@ -30,7 +30,7 @@ button {
 
 @media (any-hover: hover) {
   .buttonIcon {
-    transition: background-color 0.1s linear;
+    transition: background-color 0.2s;
   }
 
   .buttonIcon:hover, .buttonIcon:focus-visible {

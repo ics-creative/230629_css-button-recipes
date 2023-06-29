@@ -32,7 +32,7 @@ button {
 
 @media (any-hover: hover) {
   .buttonNeumorphism {
-    transition: all 0.1s linear;
+    transition: box-shadow 0.2s;
   }
 
   .buttonNeumorphism:hover, .buttonNeumorphism:focus-visible {
