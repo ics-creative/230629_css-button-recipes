@@ -37,11 +37,6 @@ button {
   }
 }
 
-/* 上矢印アイコンのスタイル */
-.iconArrowTop {
-  rotate: 270deg;
-}
-
 /* 下矢印アイコンのスタイル */
 .iconArrowBottom {
   rotate: 90deg;
@@ -50,4 +45,9 @@ button {
 /* 左矢印アイコンのスタイル */
 .iconArrowLeft {
   rotate: 180deg;
+}
+
+/* 上矢印アイコンのスタイル */
+.iconArrowTop {
+  rotate: 270deg;
 }
