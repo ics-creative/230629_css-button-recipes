@@ -16,6 +16,7 @@
   @include mixins.buttonBaseStyle;
 
   position: relative;
+  display: block;
   padding: 2px;
   color: variables.$color-white;
   background-color: variables.$color-gray;

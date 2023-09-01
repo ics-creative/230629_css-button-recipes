@@ -19,6 +19,7 @@ button {
 /* ボタンのスタイル */
 .buttonOutlineGradient {
   position: relative;
+  display: block;
   width: 100%;
   max-width: 320px;
   height: 64px;
