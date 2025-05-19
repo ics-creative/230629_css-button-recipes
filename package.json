@@ -8,13 +8,13 @@
     "format": "stylelint \"**/*.scss\" --fix"
   },
   "devDependencies": {
-    "rimraf": "^5.0.1",
-    "stylelint": "15.7.0",
-    "stylelint-config-recess-order": "4.2.0",
-    "stylelint-config-standard": "33.0.0"
+    "rimraf": "^6.0.1",
+    "stylelint": "16.19.1",
+    "stylelint-config-recess-order": "6.0.0",
+    "stylelint-config-standard": "38.0.0"
   },
   "dependencies": {
-    "sass": "1.63.4",
-    "stylelint-config-standard-scss": "9.0.0"
+    "sass": "1.89.0",
+    "stylelint-config-standard-scss": "15.0.1"
   }
 }

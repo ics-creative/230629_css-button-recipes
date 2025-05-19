@@ -51,8 +51,8 @@ button {
   }
 
   .buttonUnderline:hover::after {
-    transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
     transform: scaleX(1);
     transform-origin: left top;
+    transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
   }
 }

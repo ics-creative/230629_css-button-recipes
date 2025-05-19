@@ -41,9 +41,9 @@ button {
   height: 100%;
   content: "";
   background: linear-gradient(135deg, #6fa24a, #15a1cc);
-  filter: blur(8px);
   border-radius: 32px; /* (buttonの高さ / 2) の値 */
   opacity: 0;
+  filter: blur(8px);
 }
 
 .buttonOutlineGradient_item {

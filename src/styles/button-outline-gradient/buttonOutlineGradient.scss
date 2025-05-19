@@ -21,9 +21,9 @@
     height: 100%;
     content: "";
     background: linear-gradient(135deg, variables.$color-primary, #15a1cc);
-    filter: blur(8px);
     border-radius: calc(64px / 2); /* (buttonの高さ / 2) の値 */
     opacity: 0;
+    filter: blur(8px);
   }
 
   &_item {
