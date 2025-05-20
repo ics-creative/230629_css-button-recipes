@@ -4,10 +4,11 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "compile": "rimraf docs/*.css docs/**/*.css && sass src/styles:docs --no-source-map && stylelint \"**/*.css\" --fix",
-    "format": "stylelint \"**/*.scss\" --fix"
+    "compile": "rimraf docs/*.css docs/**/*.css && sass src/styles:docs --no-source-map --no-charset && stylelint \"**/*.css\" --fix",
+    "format": "stylelint \"**/*.scss\" --fix && prettier --write ."
   },
   "devDependencies": {
+    "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
     "stylelint": "16.19.1",
     "stylelint-config-recess-order": "6.0.0",

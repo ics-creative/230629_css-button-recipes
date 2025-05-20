@@ -12,7 +12,9 @@
   color: variables.$color-black;
   background-color: variables.$color-gray-light;
   border-radius: 50%;
-  box-shadow: -4px -4px 8px variables.$color-white, 4px 4px 8px rgb(0 0 0 / 24%);
+  box-shadow:
+    -4px -4px 8px variables.$color-white,
+    4px 4px 8px rgb(0 0 0 / 24%);
 
   $button: &;
 
@@ -20,7 +22,9 @@
     transition: box-shadow 0.2s;
 
     &:hover {
-      box-shadow: -2px -2px 4px variables.$color-white, 2px 2px 4px rgb(0 0 0 / 24%);
+      box-shadow:
+        -2px -2px 4px variables.$color-white,
+        2px 2px 4px rgb(0 0 0 / 24%);
     }
 
     &:active {

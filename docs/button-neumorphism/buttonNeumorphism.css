@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /* aタグのリセットCSS（不要な場合、セレクタごと削除してください） */
 a {
   color: inherit;
@@ -26,7 +24,9 @@ button {
   color: #222;
   background-color: #efefef;
   border-radius: 50%;
-  box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgb(0 0 0 / 24%);
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px rgb(0 0 0 / 24%);
 }
 
 @media (any-hover: hover) {
@@ -35,7 +35,9 @@ button {
   }
 
   .buttonNeumorphism:hover {
-    box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgb(0 0 0 / 24%);
+    box-shadow:
+      -2px -2px 4px #fff,
+      2px 2px 4px rgb(0 0 0 / 24%);
   }
 
   .buttonNeumorphism:active {
