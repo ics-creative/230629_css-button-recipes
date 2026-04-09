@@ -8,6 +8,10 @@
     <style>
       /* Button styles */
       .button-outline {
+        --button-color: #3223b3;
+        --button-border: #3223b3;
+        --button-background-hover: #ece9fb;
+
         display: flex;
         box-sizing: border-box;
         align-items: center;
@@ -17,17 +21,17 @@
         height: 64px;
         padding: 8px 24px;
         font-size: 1rem;
-        color: var(--color-accent);
+        color: var(--button-color);
         text-align: center;
         text-decoration: none;
         background-color: transparent;
-        border: 2px solid var(--color-accent);
+        border: 2px solid var(--button-border);
 
         @media (any-hover: hover) {
           transition: background-color 0.2s;
 
           &:hover {
-            background-color: var(--color-accent-soft);
+            background-color: var(--button-background-hover);
           }
         }
       }

@@ -8,6 +8,10 @@
     <style>
       /* Button styles */
       .button-icon-arrow {
+        --button-color: #fff;
+        --button-background: #3223b3;
+        --button-background-hover: #281c8f;
+
         display: flex;
         box-sizing: border-box;
         gap: 8px;
@@ -17,10 +21,10 @@
         height: 64px;
         padding: 8px 64px 8px 8px;
         font-size: 1rem;
-        color: var(--color-accent-contrast);
+        color: var(--button-color);
         text-align: center;
         text-decoration: none;
-        background-color: var(--color-accent);
+        background-color: var(--button-background);
         border-radius: 32px;
 
         &.is-reverse {
@@ -69,7 +73,7 @@
           }
 
           &:hover {
-            background-color: var(--color-accent-hover);
+            background-color: var(--button-background-hover);
 
             .icon-wrap {
               transform: translateX(4px);

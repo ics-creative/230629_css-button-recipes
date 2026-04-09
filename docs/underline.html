@@ -17,7 +17,7 @@
       .nav-list {
         display: flex;
         padding: 0 16px;
-        background-color: var(--color-surface);
+        background-color: #fff;
         box-shadow: 0 0 4px rgb(0 0 0 / 30%);
       }
     </style>
@@ -25,6 +25,9 @@
     <style>
       /* Button styles */
       .button-underline {
+        --button-color: #222;
+        --button-underline-color: #3223b3;
+
         position: relative;
         display: flex;
         align-items: center;
@@ -33,7 +36,7 @@
         padding: 0 24px;
         overflow: hidden;
         font-size: 1rem;
-        color: var(--color-text);
+        color: var(--button-color);
         text-align: center;
         text-decoration: none;
 
@@ -45,7 +48,7 @@
           width: 100%;
           height: 2px;
           content: "";
-          background-color: var(--color-accent);
+          background-color: var(--button-underline-color);
           transform: scaleX(0);
           transform-origin: right top;
         }

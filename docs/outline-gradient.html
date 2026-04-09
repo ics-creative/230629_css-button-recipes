@@ -8,11 +8,10 @@
     <style>
       /* Button styles */
       .button-outline-gradient {
-        --outline: linear-gradient(
-          135deg,
-          var(--color-accent),
-          color-mix(in oklab, var(--color-accent) 60%, #fff)
-        );
+        --button-color: #fff;
+        --button-surface: #222;
+        --button-gradient-start: #3223b3;
+        --button-gradient-end: #7a70dd;
 
         position: relative;
         display: block;
@@ -23,7 +22,11 @@
         padding: 2px;
         font-size: 1rem;
         text-align: center;
-        background: var(--outline);
+        background: linear-gradient(
+          135deg,
+          var(--button-gradient-start),
+          var(--button-gradient-end)
+        );
         border-radius: 32px;
         text-decoration: none;
 
@@ -35,7 +38,11 @@
           width: 100%;
           height: 100%;
           content: "";
-          background: var(--outline);
+          background: linear-gradient(
+            135deg,
+            var(--button-gradient-start),
+            var(--button-gradient-end)
+          );
           border-radius: inherit;
           opacity: 0;
           filter: blur(8px);
@@ -49,8 +56,8 @@
           justify-content: center;
           width: 100%;
           height: 100%;
-          color: var(--color-accent-contrast);
-          background-color: var(--color-text);
+          color: var(--button-color);
+          background-color: var(--button-surface);
           border-radius: inherit;
         }
 

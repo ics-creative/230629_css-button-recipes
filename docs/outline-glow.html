@@ -14,8 +14,9 @@
       }
 
       .button-outline-glow {
-        --surface: var(--color-text);
-        --outline: color-mix(in oklab, var(--color-accent) 45%, var(--color-line));
+        --button-color: #fff;
+        --button-surface: #222;
+        --button-outline: #7a70dd;
 
         position: relative;
         display: block;
@@ -25,9 +26,9 @@
         height: 64px;
         padding: 2px;
         font-size: 1rem;
-        color: var(--color-accent-contrast);
+        color: var(--button-color);
         text-align: center;
-        background-color: var(--outline);
+        background-color: var(--button-outline);
         border-radius: 32px;
         text-decoration: none;
 
@@ -40,11 +41,11 @@
           height: 100%;
           background: conic-gradient(
             from var(--angle),
-            var(--surface),
-            var(--outline),
-            var(--surface),
-            var(--outline),
-            var(--surface)
+            var(--button-surface),
+            var(--button-outline),
+            var(--button-surface),
+            var(--button-outline),
+            var(--button-surface)
           );
           border-radius: inherit;
           opacity: 0;
@@ -59,7 +60,7 @@
           justify-content: center;
           width: 100%;
           height: 100%;
-          background-color: var(--surface);
+          background-color: var(--button-surface);
           border-radius: inherit;
         }
 
@@ -69,7 +70,7 @@
           }
 
           &:hover {
-            background-color: var(--outline);
+            background-color: var(--button-outline);
           }
 
           &:hover .button-glow {

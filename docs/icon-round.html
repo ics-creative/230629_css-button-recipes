@@ -20,14 +20,18 @@
     <style>
       /* Button styles */
       .button-icon-round {
+        --button-color: #fff;
+        --button-background: #3223b3;
+        --button-background-hover: #281c8f;
+
         display: flex;
         align-items: center;
         justify-content: center;
         width: 80px;
         aspect-ratio: 1;
-        color: var(--color-accent-contrast);
+        color: var(--button-color);
         text-decoration: none;
-        background-color: var(--color-accent);
+        background-color: var(--button-background);
         border-radius: 50%;
 
         svg {
@@ -60,7 +64,7 @@
           transition: background-color 0.2s;
 
           &:hover {
-            background-color: var(--color-accent-hover);
+            background-color: var(--button-background-hover);
           }
         }
       }

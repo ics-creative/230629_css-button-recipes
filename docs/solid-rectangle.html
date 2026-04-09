@@ -8,6 +8,10 @@
     <style>
       /* Button styles */
       .button-solid-rectangle {
+        --button-color: #fff;
+        --button-background: #3223b3;
+        --button-background-hover: #281c8f;
+
         display: flex;
         box-sizing: border-box;
         align-items: center;
@@ -17,16 +21,16 @@
         height: 64px;
         padding: 8px 24px;
         font-size: 1rem;
-        color: var(--color-accent-contrast);
+        color: var(--button-color);
         text-align: center;
         text-decoration: none;
-        background-color: var(--color-accent);
+        background-color: var(--button-background);
 
         @media (any-hover: hover) {
           transition: background-color 0.2s;
 
           &:hover {
-            background-color: var(--color-accent-hover);
+            background-color: var(--button-background-hover);
           }
         }
       }

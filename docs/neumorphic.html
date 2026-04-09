@@ -8,16 +8,21 @@
     <style>
       /* Button styles */
       .button-neumorphic {
+        --button-color: #222;
+        --button-surface: #f5f5f5;
+        --button-surface-active: #ebebeb;
+        --button-shadow-highlight: #fff;
+
         display: grid;
         place-items: center;
         width: 80px;
         aspect-ratio: 1;
-        color: var(--color-text);
+        color: var(--button-color);
         text-decoration: none;
-        background-color: var(--color-page);
+        background-color: var(--button-surface);
         border-radius: 50%;
         box-shadow:
-          -4px -4px 8px var(--color-surface),
+          -4px -4px 8px var(--button-shadow-highlight),
           4px 4px 8px rgb(0 0 0 / 24%);
 
         svg {
@@ -39,12 +44,12 @@
 
           &:hover {
             box-shadow:
-              -2px -2px 4px var(--color-surface),
+              -2px -2px 4px var(--button-shadow-highlight),
               2px 2px 4px rgb(0 0 0 / 24%);
           }
 
           &:active {
-            background-color: color-mix(in oklab, var(--color-page) 92%, var(--color-text));
+            background-color: var(--button-surface-active);
             box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
           }
         }
