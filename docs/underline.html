@@ -55,12 +55,15 @@
 
         @media (any-hover: hover) {
           &::after {
+            /* Uses easeOutExpo from https://ics.media/entry/18730/ */
             transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
           }
 
           &:hover::after {
             transform: scaleX(1);
             transform-origin: left top;
+
+            /* Uses easeInOutExpo from https://ics.media/entry/18730/ */
             transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
           }
         }
