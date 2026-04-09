@@ -3,11 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../demo.css" />
-    <link rel="stylesheet" href="./buttonNeumorphism.css" />
     <title>ニューモーフィズムなボタン</title>
+    <style>
+      /* デモ用のスタイル */
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+        place-content: center;
+        place-items: center;
+        height: 100%;
+        padding: 64px 16px;
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 1rem;
+        color: #222;
+        background-color: #efefef;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    </style>
+
+    <style>
+      /* ボタン本体のスタイル */
+      .buttonNeumorphism {
+        --button-size: 80px;
+        --button-bg: #efefef;
+        --button-bg-active: #ebebeb;
+        --button-color: #222;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--button-size);
+        aspect-ratio: 1;
+        color: var(--button-color);
+        background-color: var(--button-bg);
+        border-radius: 50%;
+        box-shadow:
+          -4px -4px 8px #fff,
+          4px 4px 8px rgb(0 0 0 / 24%);
+
+        @media (any-hover: hover) {
+          transition: box-shadow 0.2s;
+
+          &:hover {
+            box-shadow:
+              -2px -2px 4px #fff,
+              2px 2px 4px rgb(0 0 0 / 24%);
+          }
+
+          &:active {
+            background-color: var(--button-bg-active);
+            box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
+          }
+        }
+      }
+    </style>
   </head>
   <body>
+    <!-- ボタン本体のHTML -->
     <a href="#" class="buttonNeumorphism">
       <svg
         class="iconEmail"

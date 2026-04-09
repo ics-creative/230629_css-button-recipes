@@ -3,11 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../demo.css" />
-    <link rel="stylesheet" href="buttonRound.css" />
     <title>楕円形の塗りつぶされたボタン</title>
+    <style>
+      /* デモ用のスタイル */
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+        place-content: center;
+        place-items: center;
+        height: 100%;
+        padding: 64px 16px;
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 1rem;
+        color: #222;
+        background-color: #efefef;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    </style>
+
+    <style>
+      /* ボタン本体のスタイル */
+      .buttonRound {
+        --button-height: 64px;
+        --button-radius: calc(var(--button-height) / 2);
+        --button-bg: #6fa24a;
+        --button-bg-hover: #54802f;
+        --button-color: #fff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 320px;
+        height: var(--button-height);
+        padding: 8px 24px;
+        overflow-wrap: anywhere;
+        font-family: sans-serif;
+        font-size: 1rem;
+        color: var(--button-color);
+        text-align: center;
+        background-color: var(--button-bg);
+        border-radius: var(--button-radius);
+
+        @media (any-hover: hover) {
+          transition: background-color 0.2s;
+
+          &:hover {
+            background-color: var(--button-bg-hover);
+          }
+        }
+      }
+    </style>
   </head>
   <body>
+    <!-- ボタン本体のHTML -->
     <a href="#" class="buttonRound">テキスト</a>
   </body>
 </html>
