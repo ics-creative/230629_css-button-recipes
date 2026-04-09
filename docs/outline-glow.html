@@ -14,8 +14,8 @@
       }
 
       .button-outline-glow {
-        --surface: #222;
-        --outline: #939393;
+        --surface: var(--color-text);
+        --outline: color-mix(in oklab, var(--color-accent) 45%, var(--color-line));
 
         position: relative;
         display: block;
@@ -25,7 +25,7 @@
         height: 64px;
         padding: 2px;
         font-size: 1rem;
-        color: #fff;
+        color: var(--color-accent-contrast);
         text-align: center;
         background-color: var(--outline);
         border-radius: 32px;

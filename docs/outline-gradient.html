@@ -8,7 +8,11 @@
     <style>
       /* Button styles */
       .button-outline-gradient {
-        --outline: linear-gradient(135deg, #6fa24a, #15a1cc);
+        --outline: linear-gradient(
+          135deg,
+          var(--color-accent),
+          color-mix(in oklab, var(--color-accent) 60%, #fff)
+        );
 
         position: relative;
         display: block;
@@ -45,8 +49,8 @@
           justify-content: center;
           width: 100%;
           height: 100%;
-          color: #fff;
-          background-color: #222;
+          color: var(--color-accent-contrast);
+          background-color: var(--color-text);
           border-radius: inherit;
         }
 

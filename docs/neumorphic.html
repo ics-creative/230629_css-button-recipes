@@ -12,12 +12,12 @@
         place-items: center;
         width: 80px;
         aspect-ratio: 1;
-        color: #222;
+        color: var(--color-text);
         text-decoration: none;
-        background-color: #efefef;
+        background-color: var(--color-page);
         border-radius: 50%;
         box-shadow:
-          -4px -4px 8px #fff,
+          -4px -4px 8px var(--color-surface),
           4px 4px 8px rgb(0 0 0 / 24%);
 
         svg {
@@ -39,12 +39,12 @@
 
           &:hover {
             box-shadow:
-              -2px -2px 4px #fff,
+              -2px -2px 4px var(--color-surface),
               2px 2px 4px rgb(0 0 0 / 24%);
           }
 
           &:active {
-            background-color: #ebebeb;
+            background-color: color-mix(in oklab, var(--color-page) 92%, var(--color-text));
             box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
           }
         }
