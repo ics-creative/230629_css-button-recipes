@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../common.css" />
-    <title>Icon and Text Button</title>
+    <link rel="stylesheet" href="./common.css" />
+    <title>Centered Icon and Text Button</title>
     <style>
       /* Button styles */
-      .buttonIconText {
+      .centered-icon-text-button {
         display: flex;
         box-sizing: border-box;
         gap: 8px;
         align-items: center;
+        justify-content: center;
         width: 100%;
         max-width: 320px;
-        height: 64px;
-        padding-inline: 8px 40px;
+        padding-inline: 8px 16px;
         color: #fff;
         text-decoration: none;
         background-color: #6fa24a;
@@ -23,20 +23,15 @@
 
         &.is-reverse {
           flex-direction: row-reverse;
-          padding-inline: 40px 8px;
+          padding-inline: 16px 8px;
         }
 
-        ._icon {
+        .icon-wrap {
           display: grid;
-          flex: none;
           place-items: center;
-          width: 48px;
+          width: 40px;
           aspect-ratio: 1;
-          padding: 4px;
           overflow: hidden;
-          color: #6fa24a;
-          background-color: #fff;
-          border-radius: 50%;
 
           svg {
             display: block;
@@ -53,11 +48,6 @@
           }
         }
 
-        ._text {
-          flex: 1;
-          text-align: center;
-        }
-
         @media (any-hover: hover) {
           transition: background-color 0.2s;
 
@@ -68,25 +58,25 @@
       }
     </style>
   </head>
-  <body class="demoPage">
+  <body class="demo-page">
     <!-- Button HTML -->
-    <a href="#" class="buttonIconText">
-      <span class="_icon">
+    <a href="#" class="centered-icon-text-button">
+      <span class="icon-wrap">
         <svg viewBox="0 0 24 24">
           <rect x="3.5" y="5.5" width="17" height="12" rx="1.5" />
           <path d="M6 9C6 9 11.5 12 12 12C12.5 12 18 9 18 9" />
         </svg>
       </span>
-      <span class="_text">Contact</span>
+      <span class="label">Contact</span>
     </a>
-    <a href="#" class="buttonIconText is-reverse">
-      <span class="_icon">
+    <a href="#" class="centered-icon-text-button is-reverse">
+      <span class="icon-wrap">
         <svg viewBox="0 0 24 24">
           <rect x="3.5" y="5.5" width="17" height="12" rx="1.5" />
           <path d="M6 9C6 9 11.5 12 12 12C12.5 12 18 9 18 9" />
         </svg>
       </span>
-      <span class="_text">Contact</span>
+      <span class="label">Contact</span>
     </a>
   </body>
 </html>

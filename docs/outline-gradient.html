@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="./common.css" />
     <title>Gradient Outline Button</title>
     <style>
       /* Button styles */
-      .buttonOutlineGradient {
+      .gradient-outline-button {
         --outline: linear-gradient(135deg, #6fa24a, #15a1cc);
 
         position: relative;
@@ -31,7 +31,7 @@
           filter: blur(8px);
         }
 
-        ._item {
+        .button-body {
           position: relative;
           display: grid;
           place-items: center;
@@ -53,10 +53,10 @@
       }
     </style>
   </head>
-  <body class="demoPage darkPage">
+  <body class="demo-page dark-page">
     <!-- Button HTML -->
-    <a href="#" class="buttonOutlineGradient">
-      <span class="_item">Text</span>
+    <a href="#" class="gradient-outline-button">
+      <span class="button-body">Text</span>
     </a>
   </body>
 </html>

@@ -3,7 +3,7 @@ body {
   font-family: sans-serif;
 }
 
-.demoPage {
+.demo-page {
   display: grid;
   gap: 16px;
   box-sizing: border-box;
@@ -14,6 +14,6 @@ body {
   background-color: #efefef;
 }
 
-.darkPage {
+.dark-page {
   background-color: #222;
 }

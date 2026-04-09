@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="./common.css" />
     <title>Glowing Outline Button</title>
     <style>
       /* Button styles */
@@ -13,7 +13,7 @@
         initial-value: 0deg;
       }
 
-      .buttonOutlineGlow {
+      .glow-outline-button {
         --surface: #222;
         --outline: #939393;
 
@@ -29,7 +29,7 @@
         border-radius: 9999px;
         text-decoration: none;
 
-        ._bg {
+        .button-glow {
           position: absolute;
           inset: 0;
           background: conic-gradient(
@@ -45,7 +45,7 @@
           animation: gradient-spin 3s linear infinite;
         }
 
-        ._item {
+        .button-body {
           position: relative;
           display: grid;
           place-items: center;
@@ -55,11 +55,11 @@
         }
 
         @media (any-hover: hover) {
-          ._bg {
+          .button-glow {
             transition: opacity 0.3s;
           }
 
-          &:hover ._bg {
+          &:hover .button-glow {
             opacity: 1;
           }
         }
@@ -76,11 +76,11 @@
       }
     </style>
   </head>
-  <body class="demoPage darkPage">
+  <body class="demo-page dark-page">
     <!-- Button HTML -->
-    <a href="#" class="buttonOutlineGlow">
-      <span class="_bg"></span>
-      <span class="_item">Text</span>
+    <a href="#" class="glow-outline-button">
+      <span class="button-glow"></span>
+      <span class="button-body">Text</span>
     </a>
   </body>
 </html>

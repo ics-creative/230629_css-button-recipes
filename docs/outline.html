@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../common.css" />
-    <title>Solid Rectangle Button</title>
+    <link rel="stylesheet" href="./common.css" />
+    <title>Outline Button</title>
     <style>
       /* Button styles */
-      .buttonBasic {
+      .outline-button {
         display: grid;
         box-sizing: border-box;
         place-items: center;
@@ -15,22 +15,22 @@
         max-width: 320px;
         height: 64px;
         padding-inline: 24px;
-        color: #fff;
+        color: #6fa24a;
         text-decoration: none;
-        background-color: #6fa24a;
+        border: 2px solid currentcolor;
 
         @media (any-hover: hover) {
           transition: background-color 0.2s;
 
           &:hover {
-            background-color: #54802f;
+            background-color: #dcedd2;
           }
         }
       }
     </style>
   </head>
-  <body class="demoPage">
+  <body class="demo-page">
     <!-- Button HTML -->
-    <a href="#" class="buttonBasic">Text</a>
+    <a href="#" class="outline-button">Text</a>
   </body>
 </html>

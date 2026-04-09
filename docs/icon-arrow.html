@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="./common.css" />
     <title>Icon and Text Button with Arrow</title>
     <style>
       /* Button styles */
-      .buttonIconText02 {
+      .icon-arrow-button {
         display: flex;
         box-sizing: border-box;
         gap: 8px;
@@ -26,7 +26,7 @@
           padding-inline: 64px 8px;
         }
 
-        ._icon {
+        .icon-wrap {
           display: grid;
           flex: none;
           place-items: center;
@@ -53,7 +53,7 @@
           }
         }
 
-        ._text {
+        .label {
           flex: 1;
           text-align: center;
         }
@@ -61,14 +61,14 @@
         @media (any-hover: hover) {
           transition: background-color 0.2s;
 
-          ._icon {
+          .icon-wrap {
             transition: transform 0.2s;
           }
 
           &:hover {
             background-color: #54802f;
 
-            ._icon {
+            .icon-wrap {
               transform: translateX(4px);
 
               &.is-left {
@@ -80,27 +80,27 @@
       }
     </style>
   </head>
-  <body class="demoPage">
+  <body class="demo-page">
     <!-- Button HTML -->
-    <a href="#" class="buttonIconText02 is-reverse">
-      <span class="_icon">
+    <a href="#" class="icon-arrow-button is-reverse">
+      <span class="icon-wrap">
         <svg viewBox="0 0 24 24">
           <path
             d="M10 6L15.2929 11.2929C15.6834 11.6834 15.6834 12.3166 15.2929 12.7071L10 18"
           />
         </svg>
       </span>
-      <span class="_text">Learn more</span>
+      <span class="label">Learn more</span>
     </a>
-    <a href="#" class="buttonIconText02">
-      <span class="_icon is-left">
+    <a href="#" class="icon-arrow-button">
+      <span class="icon-wrap is-left">
         <svg viewBox="0 0 24 24">
           <path
             d="M10 6L15.2929 11.2929C15.6834 11.6834 15.6834 12.3166 15.2929 12.7071L10 18"
           />
         </svg>
       </span>
-      <span class="_text">Back</span>
+      <span class="label">Back</span>
     </a>
   </body>
 </html>
