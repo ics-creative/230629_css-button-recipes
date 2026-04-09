@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <title>Gradient Outline Button</title>
     <style>
       /* Button styles */
-      .gradient-outline-button {
+      .button-outline-gradient {
         --outline: linear-gradient(135deg, #6fa24a, #15a1cc);
 
         position: relative;
@@ -17,13 +17,19 @@
         max-width: 320px;
         height: 64px;
         padding: 2px;
+        font-size: 1rem;
+        text-align: center;
         background: var(--outline);
-        border-radius: 9999px;
+        border-radius: 32px;
         text-decoration: none;
 
         &::before {
           position: absolute;
-          inset: 0;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
           content: "";
           background: var(--outline);
           border-radius: inherit;
@@ -33,8 +39,11 @@
 
         .button-body {
           position: relative;
-          display: grid;
-          place-items: center;
+          display: flex;
+          box-sizing: border-box;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
           height: 100%;
           color: #fff;
           background-color: #222;
@@ -55,7 +64,7 @@
   </head>
   <body class="demo-page dark-page">
     <!-- Button HTML -->
-    <a href="#" class="gradient-outline-button">
+    <a href="#" class="button-outline-gradient">
       <span class="button-body">Text</span>
     </a>
   </body>

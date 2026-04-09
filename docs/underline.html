@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,20 +24,25 @@
 
     <style>
       /* Button styles */
-      .underline-link {
+      .button-underline {
         position: relative;
-        display: grid;
-        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 64px;
         padding: 0 24px;
+        overflow: hidden;
+        font-size: 1rem;
         color: #222;
+        text-align: center;
         text-decoration: none;
 
         &::after {
           position: absolute;
-          right: 0;
           bottom: 0;
           left: 0;
+          display: block;
+          width: 100%;
           height: 2px;
           content: "";
           background-color: #6fa24a;
@@ -65,13 +70,13 @@
       <ul class="nav-list">
         <li>
           <!-- Button HTML -->
-          <a href="#" class="underline-link">Home</a>
+          <a href="#" class="button-underline">Home</a>
         </li>
         <li>
-          <a href="#" class="underline-link">About</a>
+          <a href="#" class="button-underline">About</a>
         </li>
         <li>
-          <a href="#" class="underline-link">News</a>
+          <a href="#" class="button-underline">News</a>
         </li>
       </ul>
     </nav>

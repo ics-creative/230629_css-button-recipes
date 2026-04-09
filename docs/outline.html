@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,17 +7,21 @@
     <title>Outline Button</title>
     <style>
       /* Button styles */
-      .outline-button {
-        display: grid;
+      .button-outline {
+        display: flex;
         box-sizing: border-box;
-        place-items: center;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         max-width: 320px;
         height: 64px;
-        padding-inline: 24px;
+        padding: 8px 24px;
+        font-size: 1rem;
         color: #6fa24a;
+        text-align: center;
         text-decoration: none;
-        border: 2px solid currentcolor;
+        background-color: transparent;
+        border: 2px solid #6fa24a;
 
         @media (any-hover: hover) {
           transition: background-color 0.2s;
@@ -31,6 +35,6 @@
   </head>
   <body class="demo-page">
     <!-- Button HTML -->
-    <a href="#" class="outline-button">Text</a>
+    <a href="#" class="button-outline">Text</a>
   </body>
 </html>

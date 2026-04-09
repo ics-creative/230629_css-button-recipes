@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,15 +7,18 @@
     <title>Solid Rectangle Button</title>
     <style>
       /* Button styles */
-      .solid-rectangle-button {
-        display: grid;
+      .button-solid-rectangle {
+        display: flex;
         box-sizing: border-box;
-        place-items: center;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         max-width: 320px;
         height: 64px;
-        padding-inline: 24px;
+        padding: 8px 24px;
+        font-size: 1rem;
         color: #fff;
+        text-align: center;
         text-decoration: none;
         background-color: #6fa24a;
 
@@ -31,6 +34,6 @@
   </head>
   <body class="demo-page">
     <!-- Button HTML -->
-    <a href="#" class="solid-rectangle-button">Text</a>
+    <a href="#" class="button-solid-rectangle">Text</a>
   </body>
 </html>

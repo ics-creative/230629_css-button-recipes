@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <title>Centered Icon and Text Button</title>
     <style>
       /* Button styles */
-      .centered-icon-text-button {
+      .button-centered-icon-text {
         display: flex;
         box-sizing: border-box;
         gap: 8px;
@@ -15,20 +15,24 @@
         justify-content: center;
         width: 100%;
         max-width: 320px;
-        padding-inline: 8px 16px;
+        height: 64px;
+        padding: 8px 16px 8px 8px;
+        font-size: 1rem;
         color: #fff;
+        text-align: center;
         text-decoration: none;
         background-color: #6fa24a;
-        border-radius: 9999px;
+        border-radius: 32px;
 
         &.is-reverse {
           flex-direction: row-reverse;
-          padding-inline: 16px 8px;
+          padding: 8px 8px 8px 16px;
         }
 
         .icon-wrap {
-          display: grid;
-          place-items: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 40px;
           aspect-ratio: 1;
           overflow: hidden;
@@ -60,7 +64,7 @@
   </head>
   <body class="demo-page">
     <!-- Button HTML -->
-    <a href="#" class="centered-icon-text-button">
+    <a href="#" class="button-centered-icon-text">
       <span class="icon-wrap">
         <svg viewBox="0 0 24 24">
           <rect x="3.5" y="5.5" width="17" height="12" rx="1.5" />
@@ -69,7 +73,7 @@
       </span>
       <span class="label">Contact</span>
     </a>
-    <a href="#" class="centered-icon-text-button is-reverse">
+    <a href="#" class="button-centered-icon-text is-reverse">
       <span class="icon-wrap">
         <svg viewBox="0 0 24 24">
           <rect x="3.5" y="5.5" width="17" height="12" rx="1.5" />

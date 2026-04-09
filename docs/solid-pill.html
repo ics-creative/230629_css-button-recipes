@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,18 +7,21 @@
     <title>Solid Pill Button</title>
     <style>
       /* Button styles */
-      .solid-pill-button {
-        display: grid;
+      .button-solid-pill {
+        display: flex;
         box-sizing: border-box;
-        place-items: center;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         max-width: 320px;
         height: 64px;
-        padding-inline: 24px;
+        padding: 8px 24px;
+        font-size: 1rem;
         color: #fff;
+        text-align: center;
         text-decoration: none;
         background-color: #6fa24a;
-        border-radius: 9999px;
+        border-radius: 32px;
 
         @media (any-hover: hover) {
           transition: background-color 0.2s;
@@ -32,6 +35,6 @@
   </head>
   <body class="demo-page">
     <!-- Button HTML -->
-    <a href="#" class="solid-pill-button">Text</a>
+    <a href="#" class="button-solid-pill">Text</a>
   </body>
 </html>

@@ -1,16 +1,19 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  font-size: 1rem;
 }
 
 .demo-page {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 16px;
   box-sizing: border-box;
   place-content: center;
   place-items: center;
   min-height: 100dvh;
   padding: 64px 16px;
+  color: #222;
   background-color: #efefef;
 }
 
