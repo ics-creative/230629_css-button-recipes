@@ -1,164 +1,92 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>アイコンとテキストが横並ぶボタン</title>
+    <link rel="stylesheet" href="../common.css" />
+    <title>Icon and Text Button</title>
     <style>
-      /* デモ用のスタイル */
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        height: 100%;
-      }
-
-      body {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 16px;
-        place-content: center;
-        place-items: center;
-        height: 100%;
-        padding: 64px 16px;
-        margin: 0;
-        font-family: sans-serif;
-        font-size: 1rem;
-        color: #222;
-        background-color: #efefef;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-    </style>
-
-    <style>
-      /* ボタン本体のスタイル */
+      /* Button styles */
       .buttonIconText {
-        --button-height: 64px;
-        --button-radius: calc(var(--button-height) / 2);
-        --button-bg: #6fa24a;
-        --button-bg-hover: #54802f;
-        --button-color: #fff;
-
         display: flex;
+        box-sizing: border-box;
         gap: 8px;
         align-items: center;
         width: 100%;
         max-width: 320px;
-        height: var(--button-height);
-        padding: 8px 40px 8px 8px;
-        overflow-wrap: anywhere;
-        font-family: sans-serif;
-        font-size: 1rem;
-        color: var(--button-color);
-        text-align: center;
-        background-color: var(--button-bg);
-        border-radius: var(--button-radius);
+        height: 64px;
+        padding-inline: 8px 40px;
+        color: #fff;
+        text-decoration: none;
+        background-color: #6fa24a;
+        border-radius: 9999px;
 
-        &.buttonIconText__reverse {
+        &.is-reverse {
           flex-direction: row-reverse;
-          padding: 8px 8px 8px 40px;
+          padding-inline: 40px 8px;
         }
 
-        .buttonIconText_icon {
-          display: flex;
-          flex-shrink: 0;
-          align-items: center;
-          justify-content: center;
+        ._icon {
+          display: grid;
+          flex: none;
+          place-items: center;
           width: 48px;
           aspect-ratio: 1;
           padding: 4px;
           overflow: hidden;
+          color: #6fa24a;
           background-color: #fff;
           border-radius: 50%;
+
+          svg {
+            display: block;
+            width: 2rem;
+            aspect-ratio: 1;
+
+            & * {
+              fill: none;
+              stroke: currentcolor;
+              stroke-width: 1.5;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+            }
+          }
         }
 
-        .buttonIconText_text {
-          flex-shrink: 1;
-          width: 100%;
+        ._text {
+          flex: 1;
+          text-align: center;
         }
 
         @media (any-hover: hover) {
           transition: background-color 0.2s;
 
           &:hover {
-            background-color: var(--button-bg-hover);
+            background-color: #54802f;
           }
         }
       }
-
-      .iconArrowTop {
-        rotate: 270deg;
-      }
-
-      .iconArrowBottom {
-        rotate: 90deg;
-      }
-
-      .iconArrowLeft {
-        rotate: 180deg;
-      }
     </style>
   </head>
-  <body>
-    <!-- ボタン本体のHTML -->
+  <body class="demoPage">
+    <!-- Button HTML -->
     <a href="#" class="buttonIconText">
-      <span class="buttonIconText_icon">
-        <svg
-          class="iconEmail"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="3.5"
-            y="5.5"
-            width="17"
-            height="12"
-            rx="1.5"
-            stroke="#6fa24a"
-          />
-          <path
-            d="M6 9C6 9 11.5 12 12 12C12.5 12 18 9 18 9"
-            stroke="#6fa24a"
-            stroke-linecap="round"
-          />
+      <span class="_icon">
+        <svg viewBox="0 0 24 24">
+          <rect x="3.5" y="5.5" width="17" height="12" rx="1.5" />
+          <path d="M6 9C6 9 11.5 12 12 12C12.5 12 18 9 18 9" />
         </svg>
       </span>
-      <span class="buttonIconText_text">お問い合わせ</span>
+      <span class="_text">Contact</span>
     </a>
-    <a href="#" class="buttonIconText buttonIconText__reverse">
-      <span class="buttonIconText_icon">
-        <svg
-          class="iconEmail"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="3.5"
-            y="5.5"
-            width="17"
-            height="12"
-            rx="1.5"
-            stroke="#6fa24a"
-          />
-          <path
-            d="M6 9C6 9 11.5 12 12 12C12.5 12 18 9 18 9"
-            stroke="#6fa24a"
-            stroke-linecap="round"
-          />
+    <a href="#" class="buttonIconText is-reverse">
+      <span class="_icon">
+        <svg viewBox="0 0 24 24">
+          <rect x="3.5" y="5.5" width="17" height="12" rx="1.5" />
+          <path d="M6 9C6 9 11.5 12 12 12C12.5 12 18 9 18 9" />
         </svg>
       </span>
-      <span class="buttonIconText_text">お問い合わせ</span>
+      <span class="_text">Contact</span>
     </a>
   </body>
 </html>

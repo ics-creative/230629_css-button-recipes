@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.demoPage {
+  display: grid;
+  gap: 16px;
+  box-sizing: border-box;
+  place-content: center;
+  place-items: center;
+  min-height: 100dvh;
+  padding: 64px 16px;
+  background-color: #efefef;
+}
+
+.darkPage {
+  background-color: #222;
+}

@@ -4,9 +4,13 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "format": "prettier --write \"docs/**/*.html\" \"package.json\""
+    "format": "prettier --write \"docs/**/*.html\" \"docs/**/*.css\" \"package.json\"",
+    "lint": "stylelint \"docs/**/*.{css,html}\""
   },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "postcss-html": "^1.8.1",
+    "prettier": "^3.5.3",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
   }
 }
